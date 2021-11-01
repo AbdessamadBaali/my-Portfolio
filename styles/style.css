@@ -206,26 +206,21 @@ main #home .social-media a i:hover{
     height: auto;
     width: 100%;
     background-color: #1d1d1d;
-    padding: 2rem;
-    margin:  auto;
+    padding: 2rem 0 5rem;
 }
 #projects .other-stuff {
     display: grid;
-    grid-gap: 1.5rem;
+    grid-gap: 1.8rem;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    height: 350px;
+    height: 400px;
 }
 #projects .other-stuff .box-project  {
-    overflow: hidden;
     position: relative;
 }
 
-#projects .other-stuff .box-project .box-img {
-    width: 100%;
-    height: 75%;
-}
-
-#projects .other-stuff .box-project .box-img img{
+#projects .other-stuff .box-project .box-img,
+#projects .other-stuff .box-project .box-img img {
     width: 100%;
     height: 100%;
 }
@@ -238,10 +233,6 @@ main #home .social-media a i:hover{
     position: absolute;
     bottom: 0;
     transition: ease-in-out .3s;
-    -webkit-transition: ease-in-out .3s;
-    -moz-transition: ease-in-out .3s;
-    -ms-transition: ease-in-out .3s;
-    -o-transition: ease-in-out .3s;
 }
 #projects .other-stuff .box-project .box-project-text p {
 
