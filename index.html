@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon shortcut" href="images/reshot-icon-portfolio-SMNPQ4E3UL.svg" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="font-end, back-end, web devoloper, baaliDev">
+        <meta name="auther" content="Abdessamad Baali">
+        <meta name="description"
+             content="Hi, my name is Abdessamad Baali. I'm a Front-end developer.Specialize 
+             in the Html5, css and javaScript stack with decent knowledge in other technologies in the field as well.">
+        <title>BaaliDev</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="styles/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css" >
+
+    </head>
+    <body> 
+        <!-- the header part of my portfolio -->
+        <header>
+            <a href="index.html" class="logo"><span>baali</span>Dev</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- the home section -->
+        <main>
+            <div id="home">
+                <video src="videos/Pexels Videos 2699.mp4" loop muted autoplay></video>
+                <div class="content-home">
+                    <h2>welcome i'm Abdessamad</h2>
+                    <h1>Front-end devEloper</h1>
+                    <q>Website without visitors is like a ship lost in the horizon</q>
+                </div>
+                <div class="social-media">
+                    <a target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/abdess_m_db__li/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </main>
+        <!-- the about section -->
+        <section id="about" >
+            <div class="content-about">
+                <div class="box-text-about">
+                    <h2>about me</h2>
+                    <p> 
+                        Hi, i'm Abdessamad Baali. I'm a Front-end  developer.Specialize 
+                        in Html5 css ans javaScript stack with decent knowledge in other technologie
+                        in the field as well. For an in-depth insight into my skills and qualification
+                        I invite you to check out <a href=""> my Resume</a>.
+                        <br>
+                        <br>
+                        <span id="read-more-text">
+                            Hi, i'm Abdessamad Baali. I'm a Front-end  developer.Specialize 
+                            in Html5 css ans javaScript stack with decent knowledge in other technologie
+                            in the field as well. For an in-depth insight into my skills and qualification
+                            I invite you to check out <a href=""> my Resume</a>.
+                            Hi, i'm Abdessamad Baali. I'm a Front-end  developer.Specialize 
+                            in Html5 css ans javaScript stack with decent knowledge in other technologie
+                            in the field as well. For an in-depth insight into my skills and qualification
+                            I invite you to check out <a href=""> my Resume</a>.
+                          </span>
+                    </p>
+                    <span onclick="readMoreScript()" id="read-more-btn">Read More...</span>
+                </div>
+                <div class="box-img-about">
+                    <img src="images/instagram.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- works section -->
+        <h2>projects</h2>
+        <section id="projects">
+            <h2 style="color: #f6f6f6;">other cool stuff</h2>
+            <div class="other-stuff">
+                <div class="box-project">
+                    <div class="box-img">
+                        <img src="images/billGates.png" alt="photo of the projoct documentation of bill billGates">
+                    </div>
+                    <div class="box-project-text">
+                        <p>this project is about a documentation of bill Gates</p>
+                        <a href="billGates.html" target="_blank">vieus</a>
+                        <a href="#" target="_blank"> <i class="fa fa-github fa"></i>github</a>
+                    </div>
+                </div>
+                <div class="box-project">
+                    <div class="box-img">
+                        <img src="images/form.png" alt="photo of the projoct documentation of bill billGates">
+                    </div>
+                    <div class="box-project-text">
+                        <p>this is a form for inprove the platform</p>
+                        <a href="from.html" target="_blank">vieus</a>
+                        <a href="#" target="_blank"><i class="fa fa-github"></i>github</a>
+                    </div>
+                </div>
+                <div class="box-project">
+                    <div class="box-img">
+                        <img src="images/project.png" alt="photo of the projoct documentation of bill billGates">
+                    </div>
+                    <div class="box-project-text">
+                        <p>description of the projects</p>
+                        <a href="project.html" target="_blank">vieus</a>
+                        <a href="#" target="_blank"><i class="fa fa-github"></i>github</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="works">
+
+        </section>
+        <!-- contact section -->
+        <h2>Contact Us</h2>
+        <section class="contact" id="contact">
+            <div class="formBx"> 
+                <form action="" method="get">
+                    <label for="full name">Name</label>
+                    <input id="full name" type="text" name="name" placeholder="Full Name" required
+                    minlength="8"  maxlength="20">
+
+                    <label for="mail">Email</label>
+                    <input id="mail" type="email" name="mail" placeholder="Email" required>
+
+                    <label for="msg">Your Message</label>
+                    <textarea placeholder="Write Your Message Here" id="msg" name="msg" required   
+                    minlength="100"> </textarea>
+                    <br>
+                    <input type="submit" value="send" >
+                    <input type="reset" value="reset" >
+                </form>
+            </div>
+            <div class="contactInfo">
+                <div class="info">
+                    <p> <i class="fa fa-envelope fa-2x"></i> baaliabdessamad3@gmail.com</p> 
+                    <p><i class="fa fa-phone fa-2x"></i>  06-4133-6504</p>    
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank" title="Follow on facebook"> <i class="fa fa-facebook fa-2x"></i> </a>
+                    <a href="https://www.instagram.com" target="_blank" title="Follow on instagram"> <i class="fa fa-instagram fa-2x"></i> </a>
+                    <a href="https://www.linkedin.com" target="_blank" title="Follow on linkedin"> <i class="fa fa-linkedin fa-2x"></i> </a>    
+                </div>
+            </div>    
+        </section>
+            <!--footer--------->
+            <footer>
+                <p> &copy; Copyright 2021 - Abdessamad Baali</p>
+            </footer>
+        <script src="javaScripit/script.js"></script>
+    </body>
+</html>
