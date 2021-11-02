@@ -6,8 +6,6 @@ let parentContainer =  document.getElementById('read-more-text');
 
 let changeReadMore = document.getElementById("read-more-btn")
 
-let aboutHeight = document.getElementById("about")
-
 function readMoreScript() {
 
     if (changeReadMore.textContent === "Read More...") {
@@ -16,7 +14,7 @@ function readMoreScript() {
 
          parentContainer.style.display = "block"
 
-         aboutHeight.style.height = "120vh"
+         about.style.height = "auto"
 
          about.style.margin = " 50px 0"
 
@@ -26,7 +24,7 @@ function readMoreScript() {
         
         parentContainer.style.display = "none"
 
-        aboutHeight.style.height = "100vh"
+        about.style.height = "100vh"
     }
 }
 // forme
