@@ -201,13 +201,17 @@ footer p{
 			height: 80vh;
 		}
 		main #home .content-home h2{
-			font-size: 140%;
+			font-size: 100%;
 		}
 		main #home .content-home h1{
-			font-size: 200%;
+			font-size: 150%;
 		}
 		main #home .content-home q{
-			font-size: 90%;
+			font-size: 60%;
+		}
+
+		#projects .other-stuff {
+			grid-template-columns: repeat(auto-fill, minmax(332px, 400px));
 		}
 		/* the responsive of the second parte of contact section  max width 720px  */
 		.contact .contactInfo {
