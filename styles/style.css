@@ -22,12 +22,12 @@ header nav {
     margin: 0 5% 0 0;
 }
 header .logo {
-    margin: 0 0 0 5%;
+    margin: 0 0 0 10%;
     text-decoration: none;
     text-transform: capitalize;
     color: #fff;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     letter-spacing: 1.5px;
     transition: all ease-out.25s;
     -webkit-transition: all ease-out.25s;
@@ -63,7 +63,7 @@ header nav ul li a:hover{
     transition: all ease-out 0.3s;
 }
 
-/* MAIN STYLE */
+/*===================== MAIN STYLE ===========*/
 main {
     height: 90vh;
     position: relative;
@@ -87,21 +87,21 @@ main #home .content-home {
     top: 30%;
 }
 main #home .content-home h2{
-    font-size: 2rem;
+    font-size: 250%;
     color: #fff;
     margin: 0;
     letter-spacing: 1.4px;
 }
 main #home .content-home h1{
     text-transform: uppercase;
-    font-size: 3.8rem;
+    font-size: 400%;
     color: #fff;
     margin: 10px 0;
     letter-spacing: 1px;
 
 }
 main #home .content-home q{
-    font-size: 1.5rem;
+    font-size: 150%;
     color: #fff;
     letter-spacing: 1.4px;
 
@@ -133,7 +133,7 @@ main #home .social-media a i:hover{
 }
 /*=================== style of about section ============ */
 #about {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,10 +213,11 @@ main #home .social-media a i:hover{
     grid-gap: 1.8rem;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    height: 400px;
+    height: auto;
 }
 #projects .other-stuff .box-project  {
     position: relative;
+    height: 400px;
 }
 
 #projects .other-stuff .box-project .box-img,
@@ -253,13 +254,14 @@ main #home .social-media a i:hover{
     opacity: 0.7;
 }
 #projects .other-stuff .box-project:hover > .box-project-text {
-    height: 150px;
+    height: 100px;
 }
 /*====================================contact============================*/
 .contact {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    padding-bottom: 0;
 }
 /*============form==========*/
 .contact .formBx {
@@ -267,7 +269,7 @@ main #home .social-media a i:hover{
     border-right: 1px solid #000;
 }
  h2{
-     text-transform: capitalize;
+    text-transform: capitalize;
     font-size: 2rem;
     color: rgb(65, 65, 65);
     margin: 0;
@@ -278,24 +280,20 @@ main #home .social-media a i:hover{
     display: block;
     font-size: 1.5rem;
 }
-.formBx form input {
+.formBx form input, .formBx form  textarea  {
     width: 50%;
     height: 35px;
-    padding: 5px;
+    padding: 4px;
     outline: none;
     margin: 1rem 0;
-    font-size: 1rem;
-    background-color: rgb(212, 212, 212);
-    border: none;
+    font-size: 1.2rem;
+    border: 1px solid #00000034;
+    background-color: #00000034;
+    transition: ease-in-out .3s;
 }
 .formBx form  textarea {
     height: 150px;
     width: 70%;
-    margin: 1rem 0;
-    outline: none;
-    font-size: 1rem;
-    background-color: rgb(212, 212, 212);
-    border: none;
 }
 .formBx form input:placeholder,
 .formBx form  textarea:placeholder {
@@ -314,28 +312,31 @@ main #home .social-media a i:hover{
     transition: ease-in .25s;
 }
 .formBx form  input[type="submit"]:hover, .formBx form  input[type="reset"]:hover{
-    background: #bbbbbb;
+    background: #f1f1f1;
     color: #000;
+    font-weight: bolder;
     border: 1px solid #6d6d6d;
 }
 /* the style of the second parte of contact section */
 .contact .contactInfo {
     width: 45%;
 }
+.contact .contactInfo .info {
+    height: 50%;
+    border-bottom: 1px solid #000;
+}
 .contact .contactInfo .info p{
     font-size: 1.4rem;
     margin: 0;
-    border-bottom: 1px solid #000;
 }
 .contact .contactInfo .info p i{
     margin: 2rem;
 }
-
 .contact .contactInfo .social {
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(505px - 218px);
 }
 .contact .contactInfo .social a{
     color: #000000;
@@ -353,8 +354,6 @@ main #home .social-media a i:hover{
     color: #6d6d6d;
     transform: scale(1.4);
 }
-
-
 /*=====================footer=====================*/
 footer{
     border-top: 1px solid rgba(139, 139, 139, 0.5);

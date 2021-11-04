@@ -1,0 +1,220 @@
+nav .menu-btn,
+.menu-icon{
+		display : none;
+	}
+
+@media screen and (max-width:900px) {
+
+/* ========= responsive of navbar for max width 900px====== */
+	header nav{
+		height: 65px;
+		padding : 0px 30px;
+		margin: 0;
+	}
+	header nav ul {
+		display: none;
+		position: absolute;
+		top: 65px;
+		left: 0%;
+		background-color: #000000;
+		width: 35%;
+		height: 100vh;
+		padding: 0px;
+		margin: 0px;
+}
+	header nav ul li{
+		width : 100%;
+		margin-left: 0;
+	}
+	nav ul li a{
+		font-size: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0px;
+		padding: 20px;
+		height: 40px;
+	}
+	nav .menu-icon{
+		display: block;
+		cursor:pointer;
+		padding: 28px 0;
+		margin-right: 2%;
+		user-select: none;
+		position: absolute;
+    	left: 20px;
+    	top: 4px;
+	}
+	nav .menu-icon .nav-icon{
+		background-color: #fff;
+		display: block;
+		height: 2px;
+		position: relative;
+		transition: background-color 0.2s ease-out;
+		width: 18px;
+	}
+	nav .menu-icon .nav-icon:before,
+	nav .menu-icon .nav-icon:after{
+		background:#fff;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all ease-out 0.2s;
+		width:100%;
+	}
+	nav .menu-icon .nav-icon:before{	top : 5px;}
+	nav .menu-icon .nav-icon:after{	top : -5px;}
+	nav .menu-btn:checked ~ .menu-icon .nav-icon{	background : transparent;}
+	nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+		transform : rotate(-45deg);
+		top : 0;
+	}
+	nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+		transform : rotate(45deg);
+		top : 0;
+	}
+
+	nav .menu-btn:checked ~ ul {
+		display: block;
+}
+/* ============home responsive max width 900px =========== */
+
+main #home .content-home h1{
+    font-size: 300%;
+}
+
+main #home .social-media a i{
+    font-size: 1.8rem;
+}
+/*================== responsive of about section  max width 900px========*/
+#about .content-about {
+    width: 75%;
+}
+#about .content-about .box-text-about{
+    width: 100%;
+}
+#about .content-about .box-img-about{
+    width: 0%;
+}
+/* ========== responsice of contact  form  max width 900px ======= */
+.formBx form input, .formBx form  textarea  {
+    width: 70%;
+}
+.formBx form  textarea {
+    width: 90%;
+}
+/* the responsive of the second parte of contact section  max width 900px  */
+.contact .contactInfo .info p{
+    font-size: 1.4rem;
+    margin: 0;
+
+}
+.contact .contactInfo .info p i{
+    margin: 1rem;
+}
+
+.contact .contactInfo .social {
+    height: calc(505px - 218px);
+}
+.contact .contactInfo .social a{
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+}
+.contact .contactInfo .social a i{
+    transition: ease-in-out .3s;
+
+}
+}
+
+@media(max-width : 720px){
+	/* ============home responsive max width 720px =========== */
+main #home .content-home h2{
+	font-size: 190%;
+}
+main #home .content-home q{
+    font-size: 130%;
+}
+
+
+/* ========== responsice of contact  form  max width 720px ======= */
+.contact {
+    display: block;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.contact .formBx {
+    width: 100%;
+    border-right: none;
+	border-bottom: 1px solid #000000;
+}
+.formBx form input, .formBx form  textarea  {
+    width: 60%;
+}
+.formBx form  textarea {
+    width: 80%;
+}
+/* the responsive of the second parte of contact section  max width 720px  */
+.contact .contactInfo {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.contact .contactInfo .info {
+    height: auto;
+    border-bottom: none;
+}
+.contact .contactInfo .social {
+    height: auto;
+}
+/*=====================footer=====================*/
+footer p{
+    font-size: 1.1rem;
+}  
+}
+
+@media(max-width : 640px){
+	/* the responsive of home section 640px */
+	main #home .content-home h2{
+		font-size: 150%;
+	}
+	main #home .content-home h1{
+		font-size: 240%;
+	}
+	main #home .content-home q{
+		font-size: 100%;
+	}
+	/* the responsive of the about section 640px */
+	#about {
+		height: 80vh;
+	}
+	#about .content-about {
+		width: 85%;
+	}
+
+}
+
+@media(max-width : 530px){
+		/* the responsive of home section 530px */
+		main {
+			height: 80vh;
+		}
+		main #home .content-home h2{
+			font-size: 140%;
+		}
+		main #home .content-home h1{
+			font-size: 200%;
+		}
+		main #home .content-home q{
+			font-size: 90%;
+		}
+		/* the responsive of the second parte of contact section  max width 720px  */
+		.contact .contactInfo {
+			flex-direction: column;
+			justify-content: center;
+		}
+		.contact .contactInfo .social {
+			height: 25vh;
+		}
+}

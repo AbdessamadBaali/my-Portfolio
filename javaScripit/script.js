@@ -16,7 +16,7 @@ function readMoreScript() {
 
          about.style.height = "auto"
 
-         about.style.margin = " 50px 0"
+         about.style.margin = " 40px 0"
 
 
     } else {
@@ -24,7 +24,8 @@ function readMoreScript() {
         
         parentContainer.style.display = "none"
 
-        about.style.height = "100vh"
+        about.style.height = "90vh"
+        about.style.margin = "0px"
     }
 }
 // forme
