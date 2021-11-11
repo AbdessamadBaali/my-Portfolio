@@ -1,0 +1,159 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 290px;
+    color: #232425;
+    background-color: #f8f8f8;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.headerPage {
+    width: 100%;
+    color: rgb(42, 127, 148);
+    margin: 0;
+    padding: 25px 0;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #888;
+    text-align: center;
+}
+#main-doc {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-doc #navbar {
+  width: 22%;
+  height: calc(100vh - 95px);
+  margin: 0;
+  border: 2px solid #888;
+  border-left:none;
+  border-top:none;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+}
+#main-doc .centent {
+    width: 75%;
+}
+header {
+  color: black;
+  font-size: 1.8em;
+  font-weight: lighter;
+  text-align: left;
+  margin: 0px;
+}
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar ul li {
+  border-bottom: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar ul li a {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4d4e53;;
+}
+#navbar ul li:hover,#navbar ul li a:hover{
+  color: #fff;
+  background-color: rgb(14, 14, 14);
+}
+
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #222222;
+  color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/*=====================footer=====================*/
+footer{
+    border-top: 1px solid rgba(139, 139, 139, 0.5);
+    background-color:#f0f0f0;
+    width: 100% ;
+    text-align: center;
+    margin: 0;
+}
+
+footer p{
+    padding: 2rem;
+    font-size: 1rem;
+    margin: 0;
+} 
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  #main-doc #navbar {
+    width: 28%;
+  }
+  #main-doc .centent {
+    width: 70%;
+}
+code {
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #main-doc #navbar {
+        width: 100%;
+        position: absolute;
+        top: 95px;
+        height: auto;
+      }
+      #navbar ul {
+        display: grid;
+        grid-gap: 1.3rem;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+
+      }
+      #navbar ul li {
+        width: 150px;
+      }
+      #navbar ul li a {
+       padding: 5px 10px;
+      }
+      #main-doc .centent {
+        padding: 1.5rem;
+        margin-top: 360px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #navbar ul{
+        height: 50vh;
+        grid-template-columns: repeat(auto-fill, minmax(175px, auto));
+      }
+
+}

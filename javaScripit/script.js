@@ -28,6 +28,7 @@ function readMoreScript() {
         about.style.margin = "0px"
     }
 }
+
 // forme
 const sendFeedback = (emailjs, serviceID, templateId, variables, userId) => {
     emailjs.send(serviceID, templateId, variables, userId).then(res => {
@@ -46,7 +47,7 @@ $("form-contact").submit((e) => {
     const templateId = 'template_ga13ufz';
     const serviceID = 'service_6yqhq29';
     const userId = "user_6uDwTYCySYHyDYjqRGDnu"
-    const data = { from_name: name, message, from_email: email, to_name: 'omar' }
+    const data = { from_name: name, message, from_email: email, to_name: 'Abdessamad' }
     import('emailjs-com').then(emailjs => sendFeedback(emailjs, serviceID, templateId, data, userId))
     
 })

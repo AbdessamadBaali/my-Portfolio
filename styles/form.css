@@ -20,7 +20,8 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
@@ -178,5 +179,13 @@ form {
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #e6e6e6d7;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 

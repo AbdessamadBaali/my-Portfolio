@@ -80,9 +80,6 @@ nav .menu-btn,
 }
 /* ============home responsive max width 900px =========== */
 
-main #home .content-home h1{
-    font-size: 300%;
-}
 
 main #home .social-media a i{
     font-size: 1.8rem;
@@ -128,12 +125,18 @@ main #home .social-media a i{
 }
 
 @media(max-width : 720px){
+	header .logo {
+		margin-left: 7%;
+	}
 	/* ============home responsive max width 720px =========== */
 main #home .content-home h2{
-	font-size: 190%;
+	font-size: 4vw;
+}
+main #home .content-home h1{
+	font-size: 6.5vw;
 }
 main #home .content-home q{
-    font-size: 130%;
+    font-size: 3vw;
 }
 
 
@@ -175,16 +178,10 @@ footer p{
 }
 
 @media(max-width : 640px){
-	/* the responsive of home section 640px */
-	main #home .content-home h2{
-		font-size: 150%;
+	header .logo {
+		margin-left: 8%;
 	}
-	main #home .content-home h1{
-		font-size: 240%;
-	}
-	main #home .content-home q{
-		font-size: 100%;
-	}
+
 	/* the responsive of the about section 640px */
 	#about {
 		height: 80vh;
@@ -193,21 +190,15 @@ footer p{
 		width: 85%;
 	}
 
-}
+} 
 
 @media(max-width : 530px){
+	header .logo {
+		margin-left: 55%;
+	}
 		/* the responsive of home section 530px */
 		main {
 			height: 80vh;
-		}
-		main #home .content-home h2{
-			font-size: 100%;
-		}
-		main #home .content-home h1{
-			font-size: 150%;
-		}
-		main #home .content-home q{
-			font-size: 60%;
 		}
 
 		#projects .other-stuff {

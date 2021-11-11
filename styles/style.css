@@ -19,10 +19,10 @@ header {
     width: 100%;
 }
 header nav {
-    margin: 0 5% 0 0;
+    margin-right: 5%;
 }
 header .logo {
-    margin: 0 0 0 10%;
+    margin-left: 6%;
     text-decoration: none;
     text-transform: capitalize;
     color: #fff;
@@ -30,10 +30,6 @@ header .logo {
     font-size: 1.6rem;
     letter-spacing: 1.5px;
     transition: all ease-out.25s;
-    -webkit-transition: all ease-out.25s;
-    -moz-transition: all ease-out.25s;
-    -ms-transition: all ease-out.25s;
-    -o-transition: all ease-out.25s;
 }
 header .logo span {
     color: #fc4812;
@@ -87,21 +83,21 @@ main #home .content-home {
     top: 30%;
 }
 main #home .content-home h2{
-    font-size: 250%;
+    font-size: 2;
     color: #fff;
     margin: 0;
     letter-spacing: 1.4px;
 }
 main #home .content-home h1{
     text-transform: uppercase;
-    font-size: 400%;
+    font-size: 4.5vw;
     color: #fff;
     margin: 10px 0;
     letter-spacing: 1px;
 
 }
 main #home .content-home q{
-    font-size: 150%;
+    font-size: 1.5vw;
     color: #fff;
     letter-spacing: 1.4px;
 
@@ -140,13 +136,14 @@ main #home .social-media a i:hover{
     position: relative;
 }
 #about .content-about {
-    width: 75%;
+    width: 80%;
     border: 1px solid #858585d3;
     box-shadow: 0px 16px 40px 0 #858585;
     padding: 25px;
     border-radius: 8px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #about .content-about::before {
     content: "";
@@ -201,7 +198,7 @@ main #home .social-media a i:hover{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-/* projects style section */
+/*===============projects style section =================*/
 #projects {
     height: auto;
     width: 100%;
@@ -217,13 +214,14 @@ main #home .social-media a i:hover{
 }
 #projects .other-stuff .box-project  {
     position: relative;
-    height: 400px;
+    height: 300px;
 }
 
 #projects .other-stuff .box-project .box-img,
 #projects .other-stuff .box-project .box-img img {
     width: 100%;
     height: 100%;
+    border-radius: 4px;
 }
 #projects .other-stuff .box-project .box-project-text {
     width: 100%;
@@ -311,11 +309,20 @@ main #home .social-media a i:hover{
     cursor: pointer;
     transition: ease-in .25s;
 }
-.formBx form  input[type="submit"]:hover, .formBx form  input[type="reset"]:hover{
+.formBx form  input[type="reset"] {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #6d6d6d;
+}
+.formBx form  input[type="submit"]:hover,.formBx form  input[type="reset"]:hover{
     background: #f1f1f1;
     color: #000;
     font-weight: bolder;
     border: 1px solid #6d6d6d;
+}
+.formBx form  input[type="reset"]:hover {
+    background: #000;
+    color: #f1f1f1;
 }
 /* the style of the second parte of contact section */
 .contact .contactInfo {
@@ -353,7 +360,7 @@ main #home .social-media a i:hover{
 .contact .contactInfo .social a:hover > i{
     color: #6d6d6d;
     transform: scale(1.4);
-}
+} 
 /*=====================footer=====================*/
 footer{
     border-top: 1px solid rgba(139, 139, 139, 0.5);
