@@ -13,7 +13,7 @@ function readMoreScript() {
          changeReadMore.textContent = "Read Less..."
 
          parentContainer.style.display = "block"
-
+         
          about.style.height = "auto"
 
          about.style.margin = " 40px 0"

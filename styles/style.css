@@ -15,7 +15,7 @@ a {
 
 }
 
-/* ============ */
+/* ============ header =============*/
  
 header {
     background-color: #000000;
@@ -40,7 +40,7 @@ header .logo {
     transition: all ease-out.25s;
 }
 header .logo span {
-    color: #fc4812;
+    color: rgb(223, 106, 70);
 }
 header .logo:hover {
     letter-spacing: 4px;
@@ -62,8 +62,8 @@ header nav ul li a{
     transition: ease-in-out .3s;
 }
 header nav ul li a:hover{
-    color: #f00;
-    transition: all ease-out 0.3s;
+    color: rgb(194, 79, 44);
+    transition: all ease-out 0.2s;
 }
 
 /*===================== MAIN STYLE ===========*/
@@ -203,41 +203,43 @@ main #home .social-media a i:hover{
     -o-border-radius: 50%;
 }
 /*===============projects style section =================*/
-.all-the-project {
+#big-projects {
     background-color: #151521;
-    position: relative;
-    height: 100vh;
-}
-.all-the-project .bg-project {
-    opacity: .1;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-.all-the-project .bg-project img{
-    width: 100%;
-    height: 100%;
+    height: auto;
+    width: 100% ;
 }
 .content-project {
-    position: absolute;
-    top: 7%;
-    left: 6%;
     display: flex;
     justify-content: space-between;
     height: 80vh;
-    width: 85%;
-    padding: 1rem;
-    border: 2px solid #eee;
+    width: 90% ;
+    margin: auto;
     border-radius: 4px;
+ 
 }
+#projects .box-content-project {
+    position: relative;
+    width: 90%;
+}
+
+#big-projects  .box-content-project img {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 80%;
+    opacity: .2;
+}
+
 .content-project-text  {
     color: #fff;
     width: 50%;
     padding: 1rem;
     text-align: center;
+    z-index: 2;
 }
 .content-project-text h2{
     color: #fff;
+
 }
 .content-project-text p{
     text-align: left;
@@ -251,6 +253,7 @@ main #home .social-media a i:hover{
     letter-spacing: 1.5px;
 }
 .content-project-video{
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,12 +265,13 @@ main #home .social-media a i:hover{
     border: 2px solid #eee;
     border-radius: 4px;
 }
+
 /*=============== the style of other cool stuff in the section of project */
 #projects {
-    height: auto;
+  height: auto;
     width: 100%;
     background-color: #eee;
-    padding: 0 0 5rem;
+
     
 }
 #projects .other-stuff {
@@ -346,6 +350,7 @@ main #home .social-media a i:hover{
     display: block;
     font-size: 1.5rem;
     color: #fff;
+    letter-spacing: 2px;
 }
 .formBx form input, .formBx form  textarea  {
     width: 70%;
@@ -354,7 +359,7 @@ main #home .social-media a i:hover{
     outline: none;
     margin: 1rem 0;
     font-size: 1rem;
-    border: 0.5px solid #fff;
+    border: 0.5px solid rgba(255, 255, 255, 0.623);
     background-color: #41414134;
     transition: ease-in-out .3s;
     color: #fff;
