@@ -51,3 +51,4 @@ $("form-contact").submit((e) => {
     import('emailjs-com').then(emailjs => sendFeedback(emailjs, serviceID, templateId, data, userId))
     
 })
+
