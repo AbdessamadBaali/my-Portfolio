@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     background-color: #eee;
+    position: relative;
 }
 html {
     scroll-behavior: smooth;
@@ -25,25 +26,45 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
+    height: 55px;
+    
 }
-header nav {
-    margin-right: 5%;
-}
-header .logo {
-    margin-left: 6%;
-    text-decoration: none;
-    text-transform: capitalize;
+.logo a {
+    position: absolute;
+    top: 6px;
+    left: 20px;
     color: #fff;
-    font-weight: bolder;
-    font-size: 1.6rem;
-    letter-spacing: 1.5px;
-    transition: all ease-out.25s;
+    font-size: 2.3em;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-left: 50px;
 }
-header .logo span {
-    color: rgb(223, 106, 70);
+.logo:hover >a {
+    letter-spacing: 6px;
 }
-header .logo:hover {
-    letter-spacing: 4px;
+.logo a:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: .6px rgb(255, 255, 255);
+}
+.logo a:nth-child(2){
+    color: rgba(255, 255, 255, 0.842);
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate  {
+    0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%,100% 52%,100% 100%,0% 100%) ;
+
+    }
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%,100% 46%,100% 100%,0% 100%) ;
+    }
+}
+
+
+header nav {
+    position: relative;
 }
 header nav ul{
     display: flex;
@@ -53,6 +74,10 @@ header nav ul{
 header nav ul li{
     margin-left: 25px;
     list-style: none;
+}
+
+header nav ul li:nth-child(5){
+    margin-right: 50px;
 }
 header nav ul li a{
     text-transform: capitalize;
@@ -127,7 +152,7 @@ main #home .social-media a i:hover{
 }
 /*=================== style of about section ============ */
 #about {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,10 +162,11 @@ main #home .social-media a i:hover{
     width: 70%;
     border: 1px solid #858585d3;
     box-shadow: 0px 16px 40px 0 #858585;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    animation-delay: 2s;
 }
 #about .content-about::before {
     content: "";
@@ -164,18 +190,21 @@ main #home .social-media a i:hover{
     color: rgb(65, 65, 65);
 }
 #about .content-about .box-text-about p{
-    font-size: 1.4rem;
+    font-size: 1.4em;
     line-height: 1.8rem;
     color: rgb(65, 65, 65);
+    text-align: justify;
 }
 #about .content-about .box-text-about p a{
     color: rgb(32, 94, 165);
+   
 }
 #about .content-about .box-text-about p a:visited{
     color: rgb(194, 79, 44);
 }
 #about .content-about .box-text-about #read-more-text{
     display: none;
+   
 }
 #about .content-about .box-text-about #read-more-btn{
     border: 1px solid #1d1d1d;
@@ -183,6 +212,7 @@ main #home .social-media a i:hover{
     border-radius: 4px;
     cursor: pointer;
     transition: ease-in-out .3s;
+    
 }
 #about .content-about .box-text-about #read-more-btn:hover{
     background: #bbbbbb;
@@ -205,11 +235,10 @@ main #home .social-media a i:hover{
 /*===============projects style section =================*/
 #big-projects {
     background-color: #151521;
-    height: auto;
+    height: 200vh;
     width: 100% ;
-    height: 80vh;
-    width: 1349px ;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 .content-project {
     display: flex;
@@ -270,35 +299,36 @@ main #home .social-media a i:hover{
 }
 
 /*=============== the style of other cool stuff in the section of project */
-#projects {
+#other {
   height: auto;
     width: 100%;
     background-color: #eee;
 
     
 }
-#projects .other-stuff {
+#other .other-stuff {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     justify-content: center;
-    grid-template-columns: repeat(3, minmax(350px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
     height: auto;
 }
-#projects .other-stuff .box-project  {
+#other .other-stuff .box-project  {
+    background-color: rgb(230, 190, 90);
     position: relative;
     height: 300px;
     border: 1px solid rgba(155, 153, 153, 0.767);
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 10px 10px  rgba(0, 0, 0, 0.555);
 }
 
-#projects .other-stuff .box-project .box-img,
-#projects .other-stuff .box-project .box-img img {
+#other .other-stuff .box-project .box-img,
+#other .other-stuff .box-project .box-img img {
     width: 100%;
     height: 100%;
 }
-#projects .other-stuff .box-project .box-project-text {
+#other .other-stuff .box-project .box-project-text {
     width: 100%;
     height: 100px;
     background-color: #e0e0e0;
@@ -308,26 +338,28 @@ main #home .social-media a i:hover{
     bottom: 0;
     transition: ease-in-out .3s;
 }
-#projects .other-stuff .box-project .box-project-text p {
+#other .other-stuff .box-project .box-project-text p {
     color: #333;
     text-transform: capitalize;
 }
-#projects .other-stuff .box-project .box-project-text a {
+#other .other-stuff .box-project .box-project-text a {
     margin: 4px 8px;
     color: #333;
     border: 1px solid #333;
-    padding: 8px;
+    padding: 5px;
 }
-#projects .other-stuff .box-project .box-project-text a i {
+#other .other-stuff .box-project .box-project-text a i {
     margin-right: 3px;
 }
-#projects .other-stuff .box-project:hover > .box-img {
-    opacity: 0.7;
+#other .other-stuff .box-project:hover > .box-img {
+    opacity: 0.8;
 }
-#projects .other-stuff .box-project:hover > .box-project-text {
+#other .other-stuff .box-project:hover > .box-project-text {
     height: 108px;
     transform: scaleY(-8px);
     transition: ease-in-out .3s;
+    background-color: rgb(230, 190, 90);
+
 }
 /*====================================contact============================*/
 .contact {
@@ -384,14 +416,15 @@ main #home .social-media a i:hover{
     border-radius: 4px;
     border: 1px solid transparent;
     cursor: pointer;
-    transition: ease-in-out .1s;
+    transition: ease-in .2s;
     margin-left: 10px;
+    letter-spacing: 2px;
 }
 
 .formBx form  input[type="submit"]:hover,.formBx form  input[type="reset"]:hover{
-    background: #f1f1f1;
-    color: #000;
-    border: 1px solid rgb(196, 75, 27);
+    background: #f1f1f1ce;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
   
 }
 
@@ -420,7 +453,7 @@ main #home .social-media a i:hover{
     margin-left: 1.5rem;
 }
 .contact .contactInfo .social a i{
-    transition: ease-in-out .2s;
+    transition: ease-in-out .4s;
 
 }
 .contact .contactInfo .social a:hover > i{

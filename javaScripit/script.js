@@ -1,6 +1,7 @@
-   
 // read more btn script
 let about = document.getElementById("about")
+
+let boxText = document.getElementsByClassName("box-text-about")
 
 let parentContainer =  document.getElementById('read-more-text');
 
@@ -13,6 +14,7 @@ function readMoreScript() {
          changeReadMore.textContent = "Read Less..."
 
          parentContainer.style.display = "block"
+         parentContainer.style.height = "auto"
          
          about.style.height = "auto"
 
@@ -52,3 +54,4 @@ $("form-contact").submit((e) => {
     
 })
 
+ 

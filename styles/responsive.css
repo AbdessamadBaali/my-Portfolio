@@ -6,293 +6,149 @@ nav .menu-btn,
 @media screen and (max-width:900px) {
 
 /* ========= responsive of navbar for max width 900px====== */
-	header nav{
-		height: 65px;
-		padding : 0px 30px;
-		margin: 0;
-	}
-	header nav ul {
-		display: none;
-		position: absolute;
-		top: 65px;
-		left: 0%;
-		background-color: #000000;
-		width: 35%;
-		height: 100vh;
-		padding: 0px;
-		margin: 0px;
+header nav{
+	height: 65px;
+	position: absolute;
+	top: 55px;
+	left: 0%;
+	width: 35%;
+	padding: 0px;
+	margin: 0px;
 }
-	header nav ul li{
-		width : 100%;
-		margin-left: 0;
-	}
-	nav ul li a{
-		font-size: 2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0px;
-		padding: 20px;
-		height: 40px;
-	}
-	nav .menu-icon{
-		display: block;
-		cursor:pointer;
-		padding: 28px 0;
-		margin-right: 2%;
-		user-select: none;
-		position: absolute;
-    	left: 20px;
-    	top: 4px;
-	}
-	nav .menu-icon .nav-icon{
-		background-color: #fff;
-		display: block;
-		height: 2px;
-		position: relative;
-		transition: background-color 0.2s ease-out;
-		width: 18px;
-	}
-	nav .menu-icon .nav-icon:before,
-	nav .menu-icon .nav-icon:after{
-		background:#fff;
-		content: '';
-		display: block;
-		height: 100%;
-		position: absolute;
-		transition: all ease-out 0.2s;
-		width:100%;
-	}
-	nav .menu-icon .nav-icon:before{	top : 5px;}
-	nav .menu-icon .nav-icon:after{	top : -5px;}
-	nav .menu-btn:checked ~ .menu-icon .nav-icon{	background : transparent;}
-	nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
-		transform : rotate(-45deg);
-		top : 0;
-	}
-	nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
-		transform : rotate(45deg);
-		top : 0;
-	}
 
-	nav .menu-btn:checked ~ ul {
-		display: block;
-}
-/* ============home responsive max width 900px =========== */
-
-main #home .social-media a i{
-    font-size: 1.8rem;
-}
-/*================== responsive of about section  max width 900px========*/
-#about .content-about {
-    width: 75%;
-}
-#about .content-about .box-text-about{
-    width: 100%;
-}
-#about .content-about .box-img-about{
-    width: 0%;
-}
-/* ------------------all the project part ============ */
-.all-the-project {
-	height: 110vh;
-}
-.content-project {
-    flex-direction: column;
-	align-items: center;
-	top: 11%;
-    left: 5%;
-	height: auto;
-}
-.content-project-text  {
-    width: 90%;
-    padding: 1rem;
-
-}
-.content-project-text h2{
+header nav ul {
 	margin: 0;
-	font-size: 1.8em;
+	display: none;
+	height: auto;
+	padding-left: 0;
 }
-.content-project-text p{
-    text-align: left
+header nav ul li{
+	width : 100%;
+	margin-left: 0;
+	border-bottom: 1px solid #eee;
 }
-.content-project-text a{
-    display: inline;
-    margin: 4px;
-    letter-spacing: 1.5px;
-}
-.content-project-video{
-    width: 70%;
-}
-.content-project-video video{
-    width: 100%;
-    height: auto;
-    border: 2px solid #eee;
-    border-radius: 4px;
-}
-
-/* =========== other cool stuff  */
-#projects .other-stuff {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-	grid-gap: 1rem;
-}
-#projects .other-stuff .box-project  {
-    height: 300px;
-}
-
-/* the responsive of the second parte of contact section  max width 900px  */
-.contact .contactInfo {
-	padding: 10px
-}
-.contact .contactInfo .info p{
-    font-size: 1.2rem;
-    margin: 0;
-
-}
-.contact .contactInfo .info p i{
-    margin: 1rem;
-}
-
-.contact .contactInfo .social a{
-    font-size: 1.2rem;
-    margin-left: 1.5rem;
-}
-
-}
-/* 
-====================================================
-=======================================================
-*/
-@media(max-width : 720px){
-	header .logo {
-		margin-left: 7%;
-	}
-	/* ============home responsive max width 720px =========== */
-main #home .content-home h2{
-	font-size: 4vw;
-}
-main #home .content-home h1{
-	font-size: 6.5vw;
-}
-main #home .content-home q{
-    font-size: 3vw;
-}
-
-#about .content-about::before {
-    width: 0vw;
-    height: 0vw;
-}
-#about .content-about .box-text-about h2, h2{
-	font-size: 1.8em;
-}
-#about .content-about .box-text-about p{
-	font-size: 1.4em;
-}
-
-
-.content-project {
-	top: 13%;
-    left: 4%;
-
-}
-/* ================================= other cool stuff  */
-#projects .other-stuff {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
-	grid-gap: .8rem;
-
-}
-#projects .other-stuff .box-project  {
-    height: 250px;
-}
-#projects .other-stuff .box-project .box-project-text {
-    height: 95px;
-}
-#projects .other-stuff .box-project .box-project-text p {
-    font-size : 15px;
-}
-#projects .other-stuff .box-project .box-project-text a {
-    margin: 2px 4px;
-    padding: 4px;
-}
-
-.formBx form input, .formBx form  textarea  {
-    width: 85%;
-}
-
-/* ========== responsice of contact  form  max width 720px ======= */
-.contact {
-    display: block;
-    padding: 2rem;
-    padding-bottom: 0;
-}
-.contact .formBx {
-    width: 100%;
-    border-right: none;
-	border-bottom: 1px solid #000000;
-}
-
-/* the responsive of the second parte of contact section  max width 720px  */
-.contact .contactInfo {
-    width: 100%;
+nav ul li a{
+	font-size: 25px;
+	font-weight: 700;
 	display: flex;
-	flex-direction: column;
-	justify-content: start;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	padding: 15px;
+	height: 35px;
 }
-.contact .contactInfo .info {
-    border-bottom: none;
+nav ul li a:hover{
+	background-color: rgba(245, 222, 179, 0.829);
 }
-.contact .contactInfo .social {
-	margin-bottom: 10px;
-	justify-content: start;
+nav .menu-icon{
+	display: block;
+	cursor:pointer;
+	padding: 28px 0;
+	margin-right: 2%;
+	user-select: none;
+	position: absolute;
+	left: 20px;
+	top: -55px;
 }
+nav .menu-icon .nav-icon{
+	background-color: #fff;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background-color 0.2s ease-out;
+	width: 18px;
 }
-/* 
-====================================================
-=======================================================
-*/
-@media(max-width : 640px){
-	header .logo {
-		margin-left: 8%;
-	}
+nav .menu-icon .nav-icon:before,
+nav .menu-icon .nav-icon:after{
+	background:#fff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all ease-out 0.2s;
+	width:100%;
+}
+nav .menu-icon .nav-icon:before{	top : 5px;}
+nav .menu-icon .nav-icon:after{	top : -5px;}
+nav .menu-btn:checked ~ .menu-icon .nav-icon{	background : transparent;}
+nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+	transform : rotate(-45deg);
+	top : 0;
+}
+nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+	transform : rotate(45deg);
+	top : 0;
+}
 
-	/* the responsive of the about section 640px */
+nav .menu-btn:checked ~ ul {
+	display: block;
+	background-color: #000000;
+}
+	/* ==============/* responsive of about me 900px ============= */
 	#about {
-		height: 80vh;
+		min-height: 90vh;;
 	}
-	#about .content-about {
+	.content-about {
 		width: 85%;
-	}
-
-	.all-the-project {
-		height: 120vh;
-	}
-	.content-project {
-		top: 7%;
-		left: 4%;
-	
-	}
-	.content-project-video{
-		width: 90%;
-	}
-
-	/* ========== responsice of contact  form  max width 640px ======= */
-.formBx form input, .formBx form  textarea  {
-    width: 85%;
+	  }
+	/* responsive of home 900px */
+	#home  p{
+		font-size: 5.5vw;
+	  }
+	#home  q{
+		font-size: 3vw;
+	  }
+	.content-home  h1 {
+		font-size: 6.4vw;
+	  } 
+	  /* ==============/* responsive of preset 900px ============= */
+	.preset{
+		height: auto;
+		padding: 4rem;
+	  }
+	.preset .content-preset  .box-preset .befor-preset h3{
+		font-size: 2.5vw;  
+	  } 
 }
 
+@media(max-width : 720px){
+	/* responsive of home 720px */
+	#home {
+		height: 90vh;
+	  }
+	.content-home  h1 {
+		font-size: 8.4vw;
+	  } 
 
-} 
-/* 
-====================================================
-=======================================================
-*/
-@media(max-width : 530px){
-	header .logo {
-		margin-left: 55%;
+	  /* responsive of contact 720px */
+	  #contact{
+		background-color: #000;
+		display: grid;
+		grid-template-columns: 100% ;
+		padding: 2rem;
+	  }
+	  .slider {
+		width: 400px;
+		height: 300px;
 	}
-		/* the responsive of home section 530px */
-		main {
-			height: 80vh;
-		}
+	#contact .content-form {
+		padding-bottom: 20px;
+		border-right: none;
+		border-bottom: 2px solid rgb(100, 100, 100);
+	  }
+	
+}
+
+@media(max-width : 530px){
+	.content-home  h1 {
+		font-size: 10.4vw;
+	  } 
+
+	  #about {
+		min-height: 80vh;;
+	}
+	.content-about {
+		width: 85%;
+	  }
 
 }
