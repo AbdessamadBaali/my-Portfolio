@@ -84,7 +84,9 @@ nav .menu-btn:checked ~ ul {
 	display: block;
 	background-color: #000000;
 }
-
+.logo a {	
+	top: 8px;
+	font-size: 2em;}
 /* responsive of home 900px */
 main #home .content-home  h2{
 	font-size: 2em;
@@ -106,6 +108,16 @@ main #home .content-home  h2{
 #about .content-about .box-img-about{
 	width: 0%;
 }
+/* resonsive of big project section of 900px */
+#big-projects {
+    height: auto;
+
+}
+.content-project {
+    height: auto;
+    width: 90% ;
+}
+
 /*  responsive of other cool stuff 900px  */
 #other .other-stuff {
 	grid-gap: 2rem;
@@ -144,6 +156,26 @@ main #home .content-home  h2{
 #about .content-about::before {
     width: 0vw;
 }
+/* resonsive of big project section of 720px */
+#big-projects {
+    height: auto;
+}
+.content-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    height: auto;
+    width: 90% ;
+}
+.content-project-text  {   width: 100%;}
+.content-project-text h2{
+    font-size: 1.8rem;
+	font-weight: normal;
+}
+.content-project-video{
+    width: 70%;	
+}
+
 /*  responsive of other cool stuff 720px  */
 #other .other-stuff {
 	grid-gap: .8rem;
@@ -173,16 +205,18 @@ h2{    font-size: 1.8rem;}
 }
 
 @media(max-width : 550px){
-
+	.logo a {	
+		top: 9px;
+		font-size: 1.8em;}
 /* responsive of home 550px */
 main #home .content-home  h2{
-	font-size: 1.1em;
+	font-size: 1em;
 	}
 	main #home .content-home q{
-	font-size: .75em;
+	font-size: .6em;
 	}
 	main #home .content-home h1 {
-	font-size: 1.9em;
+	font-size: 1.2em;
 } 
 /*  responsive of about me 550px  */
 
@@ -197,7 +231,10 @@ main #home .content-home  h2{
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(60%, 70%));
 }
-#other .other-stuff .box-project  {	height: 300px;}
+
+#other .other-stuff .box-project .box-project-text p {
+    font-size: .8rem;
+}
 h2{    font-size: 1.5rem;}
 
 }

@@ -39,7 +39,7 @@ header {
     cursor: pointer;
     letter-spacing: 2px;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 .logo:hover >a {
     letter-spacing: 6px;
@@ -234,32 +234,28 @@ main #home .social-media a i:hover{
 }
 /*===============projects style section =================*/
 #big-projects {
-    background-color: #151521;
-    height: 200vh;
+    background-color: #1a595d;
+    height: auto;
     width: 100% ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
 }
 .content-project {
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+    height: auto;
     width: 85% ;
-    margin: auto;
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 2rem;
     border-radius: 4px;
+    margin-left: calc((15% - 2px - 4rem) / 2);
 }
 #big-projects .box-content-project {
-    position: relative;
     width: 100%;
     height: 100%;
-}
-
-#big-projects  .box-content-project img {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    height: 100%;
-    opacity: .2;
 }
 
 .content-project-text  {
@@ -267,13 +263,13 @@ main #home .social-media a i:hover{
     width: 50%;
     padding: 1rem;
     text-align: center;
-    z-index: 2;
 }
 .content-project-text h2{
     color: #fff;
 
 }
 .content-project-text p{
+    text-align: justify;
     text-align: left;
     line-height: 1.5em;
     font-size: 1rem;
@@ -285,7 +281,6 @@ main #home .social-media a i:hover{
     letter-spacing: 1.5px;
 }
 .content-project-video{
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
