@@ -2,10 +2,10 @@ nav .menu-btn,
 .menu-icon{
 		display : none;
 	}
-
+/* ==================RESPONSIVE OF 900PX==================== */
 @media screen and (max-width:900px) {
 
-/* ========= responsive of navbar for max width 900px====== */
+/*  responsive of navbar for max width 900px */
 header nav{
 	height: 65px;
 	position: absolute;
@@ -84,71 +84,120 @@ nav .menu-btn:checked ~ ul {
 	display: block;
 	background-color: #000000;
 }
-	/* ==============/* responsive of about me 900px ============= */
-	#about {
-		min-height: 90vh;;
+
+/* responsive of home 900px */
+main #home .content-home  h2{
+	font-size: 2em;
 	}
-	.content-about {
-		width: 85%;
-	  }
-	/* responsive of home 900px */
-	#home  p{
-		font-size: 5.5vw;
-	  }
-	#home  q{
-		font-size: 3vw;
-	  }
-	.content-home  h1 {
-		font-size: 6.4vw;
-	  } 
-	  /* ==============/* responsive of preset 900px ============= */
-	.preset{
-		height: auto;
-		padding: 4rem;
-	  }
-	.preset .content-preset  .box-preset .befor-preset h3{
-		font-size: 2.5vw;  
-	  } 
+	main #home .content-home q{
+	font-size: 1em;
+	}
+	main #home .content-home h1 {
+	font-size: 3em;
+} 
+/*  responsive of about me 900px  */
+
+#about .content-about {
+	width: 85%;
 }
+#about .content-about .box-text-about{
+    width: 100%;
+}
+#about .content-about .box-img-about{
+	width: 0%;
+}
+/*  responsive of other cool stuff 900px  */
+#other .other-stuff {
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(330px, 330px));
+}
+#other .other-stuff .box-project  {	height: 300px;}
+/*  the contact section reponsive in 900px */
+.contact .formBx {   width: 50%;}
+.formBx form input, .formBx form  textarea  {
+    width: 80%;
+}
+.contact .contactInfo {  width: 50%;}
+}
+/* ====================RESPONSIVE 720PX =========================== */
 
 @media(max-width : 720px){
-	/* responsive of home 720px */
-	#home {
-		height: 90vh;
-	  }
-	.content-home  h1 {
-		font-size: 8.4vw;
-	  } 
 
-	  /* responsive of contact 720px */
-	  #contact{
-		background-color: #000;
-		display: grid;
-		grid-template-columns: 100% ;
-		padding: 2rem;
-	  }
-	  .slider {
-		width: 400px;
-		height: 300px;
+/* responsive of home 720px */
+main #home .content-home  h2{
+	font-size: 1.5em;
 	}
-	#contact .content-form {
-		padding-bottom: 20px;
-		border-right: none;
-		border-bottom: 2px solid rgb(100, 100, 100);
-	  }
-	
+	main #home .content-home q{
+	font-size: 1em;
+	}
+	main #home .content-home h1 {
+	font-size: 2.5em;
+} 
+/*  responsive of about me 720px  */
+
+#about .content-about {
+	width: 85%;
+}
+#about .content-about .box-text-about P{
+    font-size: 1.2rem;
+}
+#about .content-about::before {
+    width: 0vw;
+}
+/*  responsive of other cool stuff 720px  */
+#other .other-stuff {
+	grid-gap: .8rem;
+	grid-template-columns: repeat(auto-fill, minmax(40%, 45%));
+}
+/*  the contact section reponsive in 720px */
+.contact {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact .formBx { 
+	 width: 100%;
+	border-right: none;
+	border-bottom: 1px solid #fff;
+	}
+.formBx form input, .formBx form  textarea  {
+    width: 80%;
+}
+.contact .contactInfo {  
+	display: block;
+	width: 100%;
+	padding: 2rem;
+	padding-left: 0;
+}
+.contact .contactInfo .info p{    margin : 0 0 2rem 0rem;}
+h2{    font-size: 1.8rem;}
 }
 
-@media(max-width : 530px){
-	.content-home  h1 {
-		font-size: 10.4vw;
-	  } 
+@media(max-width : 550px){
 
-	  #about {
-		min-height: 80vh;;
+/* responsive of home 550px */
+main #home .content-home  h2{
+	font-size: 1.1em;
 	}
-	.content-about {
-		width: 85%;
-	  }
+	main #home .content-home q{
+	font-size: .75em;
+	}
+	main #home .content-home h1 {
+	font-size: 1.9em;
+} 
+/*  responsive of about me 550px  */
+
+#about .content-about {
+	width: 100%;
+}
+#about .content-about .box-text-about P{
+    font-size: 1rem;
+}
+/*  responsive of other cool stuff 550px  */
+#other .other-stuff {
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(60%, 70%));
+}
+#other .other-stuff .box-project  {	height: 300px;}
+h2{    font-size: 1.5rem;}
 
 }

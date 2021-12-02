@@ -115,16 +115,17 @@ main #home .content-home {
     top: 30%;
 }
 main #home .content-home h1, main #home .content-home h2, main #home .content-home q{
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #fff;
     margin: 0;
     letter-spacing: 1.4px;
+    font-weight: normal;
 }
 main #home .content-home h1{
     text-transform: uppercase;
     font-size: 4.5vw;
     margin: 10px 0;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
 
 }
 main #home .content-home q{
@@ -166,7 +167,6 @@ main #home .social-media a i:hover{
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
-    animation-delay: 2s;
 }
 #about .content-about::before {
     content: "";
@@ -377,13 +377,12 @@ main #home .social-media a i:hover{
     text-transform: capitalize;
     font-size: 2rem;
     color: rgb(65, 65, 65);
-    margin: 0;
     letter-spacing: 1.4px;
     margin: 2rem;
 }
 .formBx form  label{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     letter-spacing: 2px;
 }
@@ -402,10 +401,7 @@ main #home .social-media a i:hover{
 .formBx form  textarea {
     height: 150px;
 }
-.formBx form input:placeholder,
-.formBx form  textarea:placeholder {
-    color: rgb(180, 180, 180);
-}
+
 .formBx form  input[type="submit"], .formBx form  input[type="reset"]{
     display: inline;
     width: 150px;
@@ -435,11 +431,12 @@ main #home .social-media a i:hover{
 
 .contact .contactInfo .info p{
     font-size: 1.4rem;
-    margin: 0;
+    margin : 0 0 2rem 2rem;
     color: #fff;
+    letter-spacing: 1px;
 }
 .contact .contactInfo .info p i{
-    margin: 2rem;
+    margin-bottom: 1rem;
 }
 .contact .contactInfo .social {
     display: flex;

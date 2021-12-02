@@ -26,7 +26,7 @@ function readMoreScript() {
         
         parentContainer.style.display = "none"
 
-        about.style.height = "90vh"
+        about.style.height = "70vh"
         about.style.margin = "0px"
     }
 }
