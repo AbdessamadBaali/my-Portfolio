@@ -132,9 +132,7 @@ main #home .content-home  h2{
 .contact .contactInfo {  width: 50%;}
 }
 /* ====================RESPONSIVE 720PX =========================== */
-
 @media(max-width : 720px){
-
 /* responsive of home 720px */
 main #home .content-home  h2{
 	font-size: 1.5em;
@@ -232,9 +230,6 @@ main #home .content-home  h2{
 	grid-template-columns: repeat(auto-fill, minmax(60%, 70%));
 }
 
-#other .other-stuff .box-project .box-project-text p {
-    font-size: .8rem;
-}
+#other .other-stuff .box-project .box-project-text p { font-size: .8rem;}
 h2{    font-size: 1.5rem;}
-
 }
