@@ -26,7 +26,7 @@ header {
     background-color: #000000;
     box-shadow: 0 -8px 40px rgba(238, 238, 238, 0.226);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 99;
@@ -134,13 +134,9 @@ main #home .social-media{
     bottom: 10%;
     right: 2%;
 }
-main #home .social-media a {
-    margin: 6px;
-}
-
+main #home .social-media a {  margin: 6px;}
 main #home .social-media a i{
     color: #6d6d6d;
-    font-size: 2rem;
     transition: ease-in-out .3s;
 }
 main #home .social-media a i:hover{

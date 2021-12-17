@@ -45,7 +45,7 @@ nav .menu-icon{
 	top: -55px;
 }
 nav .menu-icon .nav-icon{
-	background-color: #fff;
+	background-color: #40c6d8;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -54,7 +54,7 @@ nav .menu-icon .nav-icon{
 }
 nav .menu-icon .nav-icon:before,
 nav .menu-icon .nav-icon:after{
-	background:#fff;
+	background:#40c6d8;
 	content: '';
 	display: block;
 	height: 100%;
@@ -77,8 +77,6 @@ nav .menu-btn:checked ~ ul {
 	display: block;
 	background-color: #40c6d8;
 }
-.logo a {	top: 8px;	font-size: 2em;}
-
 #about .content-about .box-img-about{	width: 0%;}
 #about .container .box-img-about{   width: 0%;}
 #big-projects .w-50 {
