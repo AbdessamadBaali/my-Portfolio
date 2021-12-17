@@ -26,7 +26,7 @@ header {
     background-color: #000000;
     box-shadow: 0 -8px 40px rgba(238, 238, 238, 0.226);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 99;
