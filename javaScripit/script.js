@@ -6,6 +6,7 @@ let boxText = document.getElementsByClassName("box-text-about")
 let parentContainer =  document.getElementById('read-more-text');
 
 let changeReadMore = document.getElementById("read-more-btn")
+let contentAbout = document.querySelector('.content-about')
 
 function readMoreScript() {
 
@@ -17,7 +18,7 @@ function readMoreScript() {
          parentContainer.style.height = "auto"
          
          about.style.height = "auto"
-
+         contentAbout.style.alignItems = "start"
          about.style.margin = " 40px 0"
 
 
@@ -26,7 +27,8 @@ function readMoreScript() {
         
         parentContainer.style.display = "none"
 
-        about.style.height = "70vh"
+        about.style.height = "auto"
+        contentAbout.style.alignItems = "center"
         about.style.margin = "0px"
     }
 }

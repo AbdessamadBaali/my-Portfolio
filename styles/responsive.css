@@ -1,10 +1,7 @@
 nav .menu-btn,
-.menu-icon{
-		display : none;
-	}
+.menu-icon{		display : none;	}
 /* ==================RESPONSIVE OF 900PX==================== */
 @media screen and (max-width:900px) {
-
 /*  responsive of navbar for max width 900px */
 header nav{
 	height: 65px;
@@ -15,7 +12,6 @@ header nav{
 	padding: 0px;
 	margin: 0px;
 }
-
 header nav ul {
 	margin: 0;
 	display: none;
@@ -37,9 +33,7 @@ nav ul li a{
 	padding: 15px;
 	height: 35px;
 }
-nav ul li a:hover{
-	background-color: rgba(245, 222, 179, 0.829);
-}
+nav ul li a:hover{	background-color: rgba(245, 222, 179, 0.829);}
 nav .menu-icon{
 	display: block;
 	cursor:pointer;
@@ -79,157 +73,62 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
 	transform : rotate(45deg);
 	top : 0;
 }
-
 nav .menu-btn:checked ~ ul {
 	display: block;
-	background-color: #000000;
+	background-color: #40c6d8;
 }
-.logo a {	
-	top: 8px;
-	font-size: 2em;}
-/* responsive of home 900px */
-main #home .content-home  h2{
-	font-size: 2em;
-	}
-	main #home .content-home q{
-	font-size: 1em;
-	}
-	main #home .content-home h1 {
-	font-size: 3em;
-} 
-/*  responsive of about me 900px  */
+.logo a {	top: 8px;	font-size: 2em;}
 
-#about .content-about {
-	width: 85%;
+#about .content-about .box-img-about{	width: 0%;}
+#about .container .box-img-about{   width: 0%;}
+#big-projects .w-50 {
+	width: 100% !important;
 }
-#about .content-about .box-text-about{
-    width: 100%;
-}
-#about .content-about .box-img-about{
-	width: 0%;
-}
-/* resonsive of big project section of 900px */
-#big-projects {
-    height: auto;
-
-}
-.content-project {
-    height: auto;
-    width: 90% ;
-}
-
-/*  responsive of other cool stuff 900px  */
+/* other cool stuff */
 #other .other-stuff {
-	grid-gap: 2rem;
-	grid-template-columns: repeat(auto-fill, minmax(330px, 330px));
+    width: 95%;
+    padding: 0rem;
+    grid-template-columns: auto auto auto  ;
+    grid-template-rows: auto auto auto  ;
 }
-#other .other-stuff .box-project  {	height: 300px;}
-/*  the contact section reponsive in 900px */
-.contact .formBx {   width: 50%;}
-.formBx form input, .formBx form  textarea  {
-    width: 80%;
-}
-.contact .contactInfo {  width: 50%;}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 720px){
-/* responsive of home 720px */
-main #home .content-home  h2{
-	font-size: 1.5em;
-	}
-	main #home .content-home q{
-	font-size: 1em;
-	}
-	main #home .content-home h1 {
-	font-size: 2.5em;
-} 
-/*  responsive of about me 720px  */
-
-#about .content-about {
-	width: 85%;
-}
-#about .content-about .box-text-about P{
-    font-size: 1.2rem;
-}
-#about .content-about::before {
-    width: 0vw;
-}
-/* resonsive of big project section of 720px */
-#big-projects {
-    height: auto;
-}
-.content-project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    height: auto;
-    width: 90% ;
-}
-.content-project-text  {   width: 100%;}
-.content-project-text h2{
-    font-size: 1.8rem;
-	font-weight: normal;
-}
-.content-project-video{
-    width: 70%;	
-}
-
-/*  responsive of other cool stuff 720px  */
+#about .container::before {  width: 0vw;}
+/* other cool stuff */
 #other .other-stuff {
-	grid-gap: .8rem;
-	grid-template-columns: repeat(auto-fill, minmax(40%, 45%));
+    width: 90%;
+    grid-template-columns: auto auto   ;
+    grid-template-rows: auto auto   ;
 }
-/*  the contact section reponsive in 720px */
-.contact {
-    flex-direction: column;
-    justify-content: space-between;
+#contact .w-50 {	width: 100% !important;}
 }
-.contact .formBx { 
-	 width: 100%;
-	border-right: none;
-	border-bottom: 1px solid #fff;
+@media(max-width : 520px){ 
+	/* home section */
+	#home .display-3 {
+		font-size: 26px;
 	}
-.formBx form input, .formBx form  textarea  {
-    width: 80%;
-}
-.contact .contactInfo {  
-	display: block;
-	width: 100%;
-	padding: 2rem;
-	padding-left: 0;
-}
-.contact .contactInfo .info p{    margin : 0 0 2rem 0rem;}
-h2{    font-size: 1.8rem;}
-}
-
-@media(max-width : 550px){
-	.logo a {	
-		top: 9px;
-		font-size: 1.8em;}
-/* responsive of home 550px */
-main #home .content-home  h2{
-	font-size: 1em;
+	#home .fs-3 {
+		font-size: 18px !important;
 	}
-	main #home .content-home q{
-	font-size: .6em;
+	#home .fs-5 {
+		font-size: 14px !important;
 	}
-	main #home .content-home h1 {
-	font-size: 1.2em;
-} 
-/*  responsive of about me 550px  */
-
-#about .content-about {
-	width: 100%;
-}
-#about .content-about .box-text-about P{
-    font-size: 1rem;
-}
-/*  responsive of other cool stuff 550px  */
-#other .other-stuff {
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fill, minmax(60%, 70%));
-}
-
-#other .other-stuff .box-project .box-project-text p { font-size: .8rem;}
-h2{    font-size: 1.5rem;}
+	/* about section */
+	#about {
+		padding: 0;
+	}
+	#about .container {
+		width: 100% !important;
+		border: none;
+	}
+	/* project section */
+	#big-projects {
+		padding: 0 ;
+	}
+	#other .other-stuff {
+		width: 100%;
+		grid-template-columns:  auto   ;
+		grid-template-rows:  auto   ;
+	}
 }

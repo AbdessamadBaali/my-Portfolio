@@ -11,9 +11,11 @@
              in the Html5, css and javaScript stack with decent knowledge in other technologies in the field as well.">
         <title>BaaliDev</title>
         <link rel="icon shortcut" href="images/icon of the pages/reshot-icon-portfolio-SMNPQ4E3UL.svg" >
+        <link rel="stylesheet" href="styles/bootstrap-5.1.3-dist/css/bootstrap.css">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/responsive.css">
         <link rel="stylesheet" href="styles/fontawesome-free-6.0.0-beta2-web/css/all.css">
+     
     </head>
     <body> 
         <!-- the header part of my portfolio -->
@@ -30,11 +32,11 @@
                     <span class="nav-icon"></span>
                 </label>
                 <ul >
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about me</a></li>
-                    <li><a href="#big-projects">projects</a></li>
-                    <li><a href="#other">otherCoolStuff</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a class="fs-6 p-4" href="#home">home</a></li>
+                    <li><a class="fs-6 p-4" href="#about">about me</a></li>
+                    <li><a class="fs-6 p-4" href="#big-projects">projects</a></li>
+                    <li><a class="fs-6 p-4" href="#other">otherCoolStuff</a></li>
+                    <li><a class="fs-6 p-4" href="#contact">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,9 +45,9 @@
             <div id="home">
                 <video src="videos/bgvideo.mp4" loop muted autoplay></video>
                 <div class="content-home">
-                    <h2>welcome i'm Abdessamad</h2>
-                    <h1>Front-end devEloper</h1>
-                    <q>Website without visitors is like a ship lost in the horizon</q>
+                   <h2 class=" text-white fs-3">welcome i'm Abdessamad</h2>
+                    <h1 class="text-white display-3">Front-end devEloper</h1>
+                    <q class="fw-lighter text-white fs-5 text-center">Website without visitors is like a ship lost in the horizon</q>
                 </div>
                 <div class="social-media">
                     <a target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -56,14 +58,14 @@
         </main>
         <!-- the about section -->
         <section id="about" >
-            <div class="content-about">
-                <div class="box-text-about">
-                    <h2>about me</h2>
-                    <p> 
+            <div class="container ">
+                <div class="container-fluid">
+                    <h2 class="h2">about me</h2>
+                    <p class="fw-lighter fs-6"> 
                         Hi, i'm Abdessamad Baali. I'm a Front-end  developer. Specialize 
                         in Html5 css and javaScript  with decent knowledge in other technologie
                         in the field as well. For an in-depth insight into my skills and qualification
-                        I invite you to check out <a href="#"> my Resume</a>.
+                        I invite you to check out <a class="pe-auto" href="#"> my Resume</a>.
                         <br>
                         <!-- this part is for read more -->
                         <span id="read-more-text">
@@ -76,7 +78,7 @@
                             So I departed on this journey.
                             <br>
                             I used a wide collection of resources in my learning, 
-                            from <a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a target="_blank" href="https://developer.mozilla.org/">MDN</a>  to YouTube
+                            from <a class="pe-auto" target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a class="pe-auto" target="_blank" href="https://developer.mozilla.org/">MDN</a>  to YouTube
                             (I watched so many videos from these channels: Traversy media, Web Dev Simplified, Fireship, and so many others).
                             solved so many algorithmic challenges over HackerRank,
                             and build so many projects. I devoted all of my time and effort to this. 
@@ -88,22 +90,43 @@
                           </span>
                     </p>
                     <!-- btn onclick display span of read more -->
-                    <span onclick="readMoreScript()" id="read-more-btn">Read More...</span>
+                    <span class="btn btn-outline-danger" onclick="readMoreScript()" id="read-more-btn">Read More...</span>
                 </div>
                 <div class="box-img-about">
-                    <img src="images/me.jpg" alt="">
+                    <img class="rounded-circle" src="images/me.jpg" alt="">
                 </div>
             </div> 
         </section>
         <!-- projects section -->
-        <h2>projects</h2>
-        <section id="big-projects">
-            <!-- the first project -->
-            <div class="box-content-project" >
-                <div class="content-project">       
-                    <div class="content-project-text">
-                        <h2>personnal web site (portfolio) </h2>
-                        <p>
+        <h2 class="h2 m-5">projects</h2>
+        <section id="big-projects" class="container m-auto row " >
+        <!-- the first project -->
+            <div class="w-50">       
+                <div class="container-fluid ">
+                    <h3 class="h3">personnal web site (portfolio) </h3>
+                    <p class="text-muted fs-6 lh-base fw-lighter" >  
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    </p>
+                    <div class=" btn-group">
+                        <a class="btn btn-outline-warning" href="#" target="_blank">vieu</a>
+                        <a class="btn btn-outline-warning" href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
+                    </div>
+                </div>
+                <div class="w-100 mt-4 ">
+                    <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project01.mp4" alt="this a video of this project" controls ></video>
+                </div>
+            </div>
+            <!-- the second project -->
+                <div class="w-50">
+                    <div class="container-fuild w-100">
+                        <h3 class="h3">anime website  </h3>
+                        <p class="text-muted fs-6 lh-base fw-lighter" >  
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type
@@ -112,149 +135,176 @@
                             with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum
                         </p>
-                            <a href="#" target="_blank">vieu</a>
-                            <a href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
-                        </div>
-                        <div class="content-project-video">
-                            <video src="videos/project01.mp4" alt="this a video of this project" controls ></video>
-                        </div>
-                </div>
-                <!-- the second project -->
-                <div class="box-content-project">
-                    <div class="content-project">
-                        <div class="content-project-text">
-                            <h2>anime website  </h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
-                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                            </p>
-                            <a href="#" target="_blank">vieu</a>
-                            <a href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
-                        </div>
-                        <div class="content-project-video">
-                            <video src="videos/project2.mp4" alt="this a video of this project" controls ></video>
+                        <div class=" btn-group">
+                            <a class="btn btn-outline-warning" href="#" target="_blank">vieu</a>
+                            <a class="btn btn-outline-warning" href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
                         </div>
                     </div>
+                    <div class="w-100 mt-4">
+                        <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project2.mp4" alt="this a video of this project" controls ></video>
+                    </div>
                 </div>
-            </div>
         </section>
         <!-- other cool stuff section -->
-        <section id="other">
-            <h2>other cool stuff</h2>
-            <div class="other-stuff">
-                <!-- first box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/jsDocumentation.png" alt="photo of the projoct javaScripit">
+        <h2 class="h2 m-5">other cool stuff</h2>
+        <section id="other" class="container-fluid pb-5 ">  
+            <div class="other-stuff container m-auto " >
+                <!-- card one -->
+                <div class="card ">
+                    <img src="images/jsDocumentation.png" class="card-img-top" alt="photo of the projoct javaScripit">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this project is about a documentation of javaScripit (Html5, css) .</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/js-documentation" target="_blank"> <i class="fab fa-github fa"></i>github</a>
                     </div>
-                    <div class="box-project-text">
-                        <p>this project is about a documentation of javaScripit (Html5, css) </p>
-                        <a href="#" target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/js-documentation" target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-                <!-- second box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/billGates.png" alt="photo of the projoct documentation of bill billGates">
-                    </div>
-                    <div class="box-project-text">
-                        <p>this project is about a documentation of bill Gates (Html5, css) </p>
-                        <a href="#" target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/Bills-Gates-doc" target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                  </div>
+                <!-- card two -->
+                <div class="card">
+                    <img src="/images/billGates.png" class="card-img-top" alt="photo of the projoct documentation of bill billGates">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this project is about a documentation of bill Gates (Html5, css).</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/Bills-Gates-doc"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
                     </div>
                 </div>
-                <!-- third box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/form.png" alt="photo of the projoct documentation of bill billGates">
-                    </div>
-                    <div class="box-project-text">
-                        <p>this is a form for inprove the platform</p>
-                        <a href="#" target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/form" target="_blank"><i class="fab fa-github"></i>github</a>
-                    </div>
-                </div>
-                <!-- forth box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/store of basketball.png" alt="photo of the projoct store of basketball">
-                    </div>
-                    <div class="box-project-text">
-                        <p>this project about store of basketball</p>
-                        <a href="#" target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/stor-of-basketball" target="_blank"><i class="fab fa-github"></i>github</a>
+                <!-- card three -->
+                <div class="card">
+                    <img src="/images/form.png"  class="card-img-top"alt="photo of the projoct documentation of bill billGates">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this is a form for inprove the platform.</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/form" target="_blank"> <i class="fab fa-github fa"></i>github</a>
                     </div>
                 </div>
-                <!-- fifth  box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/blackJack.png" alt="photo of the projoct store of basketball">
-                    </div>
-                    <div class="box-project-text">
-                        <p>this project is a small game (HTML, css, js)</p>
-                        <a href="# " target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/blackJack" target="_blank"><i class="fab fa-github"></i>github</a>
-                    </div>
-                </div>
-                <!-- sixth box project -->
-                <div class="box-project">
-                    <div class="box-img">
-                        <img src="/images/changeBackgound.png" alt="photo of the projoct store of basketball">
-                    </div>
-                    <div class="box-project-text">
-                        <p>this project is change backgroundClor (HTML, css, js)</p>
-                        <a href="# " target="_blank">vieus</a>
-                        <a href="https://github.com/AbdessamadBaali/blackJack" target="_blank"><i class="fab fa-github"></i>github</a>
+
+                <div class="card" >
+                    <img src="/images/store of basketball.png"  class="card-img-top" alt="photo of the projoct store of basketball">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this project about store of basketball</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/stor-of-basketball"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
                     </div>
                 </div>
+
+                <div class="card " >
+                    <img src="/images/blackJack.png" class="card-img-top" alt="photo of the projoct store of basketball">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this project is a small game (HTML, css, js)</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <img src="/images/changeBackgound.png" class="card-img-top" alt="photo of the projoct store of basketball">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">this project is change backgroundClor (HTML, css, js)</p>
+                      <a href="#" class="btn btn-outline-primary">vieus</a>
+                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <!-- services  -->
+        <section id="services" class="p-5 bg-info">
+            <h2 class="h2 mb-5 text-center text-white ">what we offer</h2>
+            <div class="row justify-content-around">
+                <div class="container col-md-4 col-sm-5  p-2 text-center">
+                    <i class="fa fa-mobile-alt text-primary bg-white border rounded-circle fs-2 p-4 m-2"></i>
+                <h4>Responsive</h4>
+                <p>Looks great on any screnn size!</p>
+                </div>
+                <div class="container col-md-4 col-sm-5 p-2 text-center">
+                    <i class="fa fa-pen text-primary bg-white border rounded-circle fs-2 p-4 m-2"></i>
+                <h4>Redisigned</h4>
+                <p>Freshlt redisigned for bootstrap</p>
+                </div>
+                <div class="container col-md-4 col-sm-5 p-2 text-center">
+                    <i class="fa fa-microphone text-primary bg-white border rounded-circle fs-2 p-4 m-2"></i>
+                <h4>responsive</h4>
+                <p>looks great on any screnn size!</p>
+                </div> 
             </div>
- 
         </section>
         <!-- contact section -->
-        <h2>Contact Us</h2>
-        <section class="contact" id="contact">
-            <div class="formBx"> 
+        <h2 class="h2 m-5">Contact Us</h2>
+        <section  class="container-fuild" id="contact" >
+            <div class="container w-50 m-auto" > 
                 <form action="" method="get">
-                    <label for="full name">Name</label>
-                    <input id="full name" type="text" name="name" placeholder="Full Name" required
+                    <label class="text-info" for="full name">Name</label>
+                    <input  class="btn btn-outline-primary w-100" id="full name" type="text" name="name" placeholder="Full Name" required
                     minlength="8"  maxlength="20">
 
-                    <label for="mail">Email</label>
-                    <input id="mail" type="email" name="mail" placeholder="Email" required>
+                    <label class="text-info" for="mail">Email</label>
+                    <input class="btn btn-outline-primary w-100" id="mail" type="email" name="mail" placeholder="Email" required>
 
-                    <label for="msg">Your Message</label>
-                    <textarea id="msg" name="msg" placeholder="Write Your Message Here" id required > </textarea>
+                    <label class="text-info" for="msg">Your Message</label>
+                    <textarea  class="btn btn-outline-primary w-100 "id="msg" name="msg" placeholder="Write Your Message Here" id required > </textarea>
                     <br>
-                    <input type="submit" value="send" >
-                    <input type="reset" value="reset" >
+                    <div class="btn-group">
+                        <input class="btn btn-outline-primary" type="submit" value="send" >
+                        <input class="btn btn-outline-primary" type="reset" value="reset" >    
+                    </div>
                 </form>
-            </div>
-            <!-- this parte is about information -->
-            <div class="contactInfo">
-                <div class="info">
-                    <p>
-                         <i class="fa fa-envelope "></i> <br>
-                         Email : baaliabdessamad3@gmail.com
-                    </p> 
-                    <p>
-                        <i class="fa fa-phone "></i> <br>
-                        Phone : +212 41336504
-                    </p>    
+                <div class="logo">
+                    <a href="index.html" title="home">baaliDev</a>
+                    <a href="index.html" title="home">baaliDev</a>
                 </div>
-                <div class="social">
-                    <a href="https://www.facebook.com" target="_blank" title="Follow on facebook"> <i class="fab fa-facebook fa-2x"></i> </a>
-                    <a target="_blank" href="https://www.instagram.com/abdess_m_db__li/"><i class="fab fa-instagram fa-2x" ></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/"><i class="fab fa-linkedin fa-2x" ></i></a>
-                    <a target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github fa-2x" ></i></a>
+            </div> 
+            <div class="contact-info">
+                <div class="card-info">
+                    <i class="fa fa-map-marked"></i>
+                    <p>address</p>
+                    <span class="hr text-muted"></span>
+                    <p class="text-muted">Lot Ain Aghbal Ahadaf Azrou</p>
                 </div>
-            </div>    
+                <div class="card-info">
+                    <i class="fa fa-envelope "></i>
+                    <p>email</p>
+                    <span class="hr text-muted"></span>
+                   <a class="text-muted" href="">baaliabdessamad3@gmail.com</a>
+                </div>
+                <div class="card-info">
+                    <i class="fa fa-phone"></i>
+                    <p>phone</p>
+                    <span class="hr text-muted"></span>
+                    <p class="text-muted">+212 641336504</p>
+                </div>
+            </div> 
         </section>
+        <!-- footer section  -->
+        <footer class="footer text-center">
+            <div class="container m-4 px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a
+                            class="social-link rounded-circle text-white mr-3" 
+                            href="https://github.com/AbdessamadBaali">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white lg"
+                         href="#!"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a 
+                            class="social-link rounded-circle text-white"
+                            href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-muted  fs-6">Copyright © baaliDev 2021</p>
+            </div>
+        </footer>
+        <!-- java scripr link  -->
         <script src="/javaScripit/script.js"></script>
     </body>
 </html>

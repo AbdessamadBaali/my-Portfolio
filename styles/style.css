@@ -1,40 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background-color: #eee;
-    position: relative;
+    background-color: whitesmoke;  
+    width: 100%;
 }
-html {
-    scroll-behavior: smooth;
-}
-/* generation style */
-a {
-    color: #fff;
-    text-transform: capitalize;
 
+/* generation style */
+
+h2,h1,h3{
+    text-transform: capitalize;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1.4px;
+    margin: 0;
+    padding: 0;
 }
 
 /* ============ header =============*/
  
 header {
     background-color: #000000;
+    box-shadow: 0 -8px 40px rgba(238, 238, 238, 0.226);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: 55px;
-    
+    height: 55px;   
 }
 .logo a {
     position: absolute;
-    top: 6px;
+    top: 0px;
     left: 20px;
     color: #fff;
-    font-size: 2.3em;
+    font-size: 2em;
     transition: ease-in-out .5s;
     cursor: pointer;
     letter-spacing: 2px;
@@ -46,11 +50,11 @@ header {
 }
 .logo a:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: .6px rgb(255, 255, 255);
+    -webkit-text-stroke: .8px #40c6d8;
 }
 .logo a:nth-child(2){
-    color: rgba(255, 255, 255, 0.842);
-    animation: animate 5s ease-in-out infinite;
+    color: #40c6d8;
+    animation: animate 3s ease-in-out infinite;
 }
 @keyframes animate  {
     0%, 100% {
@@ -72,7 +76,6 @@ header nav ul{
     align-items: center;
 }
 header nav ul li{
-    margin-left: 25px;
     list-style: none;
 }
 
@@ -80,20 +83,21 @@ header nav ul li:nth-child(5){
     margin-right: 50px;
 }
 header nav ul li a{
+    color: #fff;
     text-transform: capitalize;
-    font-size: 1rem;
     letter-spacing: 1.4px;
     text-decoration: none;
     transition: ease-in-out .3s;
 }
 header nav ul li a:hover{
-    color: rgb(194, 79, 44);
+    color: rgb(34, 162, 194);
     transition: all ease-out 0.2s;
 }
 
 /*===================== MAIN STYLE ===========*/
 main {
-    height: 90vh;
+    height: 85vh;
+    width: 100%;
     position: relative;
  }
 
@@ -114,23 +118,15 @@ main #home .content-home {
     position: absolute;
     top: 30%;
 }
-main #home .content-home h1, main #home .content-home h2, main #home .content-home q{
-    font-size: 2.5vw;
-    color: #fff;
+.content-home h1,.content-home h2,.content-home q{
     margin: 0;
     letter-spacing: 1.4px;
-    font-weight: normal;
 }
 main #home .content-home h1{
-    text-transform: uppercase;
-    font-size: 4.5vw;
     margin: 10px 0;
     letter-spacing: 4px;
+}
 
-}
-main #home .content-home q{
-    font-size: 1.5vw;
-}
 main #home .social-media{
     display: flex;
     flex-direction: column;
@@ -153,27 +149,28 @@ main #home .social-media a i:hover{
 }
 /*=================== style of about section ============ */
 #about {
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 2rem;
 }
-#about .content-about {
-    width: 70%;
-    border: 1px solid #858585d3;
-    box-shadow: 0px 16px 40px 0 #858585;
+#about .container {
+    
+    border: 0.8px solid #858585d3;
+    box-shadow: 0px 2px 30px 0 #858585ce;
     padding: 1.5rem;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
-#about .content-about::before {
+#about .container::before {
     content: "";
     width: 18vw;
     height: 18vw;
     background: linear-gradient( to right bottom, rgb(152 152 152 / 66%), #d4d4d400);
-    box-shadow: 0px 16px 40px #00000050;
+    box-shadow: 0px 16px 40px #00000025;
     border-radius: 50%;
     position: absolute;
     top: 39px;
@@ -181,274 +178,114 @@ main #home .social-media a i:hover{
     z-index: -1;
     -webkit-border-radius: 50%;
 }
-#about .content-about .box-text-about{
-    width: 75%;
-}
-#about .content-about .box-text-about h2{
-    text-transform: capitalize;
-    font-size: 2rem;
-    color: rgb(65, 65, 65);
-}
-#about .content-about .box-text-about p{
-    font-size: 1.4em;
-    line-height: 1.8rem;
-    color: rgb(65, 65, 65);
-    text-align: justify;
-}
-#about .content-about .box-text-about p a{
-    color: rgb(32, 94, 165);
-   
-}
-#about .content-about .box-text-about p a:visited{
-    color: rgb(194, 79, 44);
-}
-#about .content-about .box-text-about #read-more-text{
-    display: none;
-   
-}
-#about .content-about .box-text-about #read-more-btn{
-    border: 1px solid #1d1d1d;
-    padding: 5px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-    
-}
-#about .content-about .box-text-about #read-more-btn:hover{
-    background: #bbbbbb;
-    color: #000;
-    border: 1px solid #6d6d6d;
-}
-#about .content-about .box-img-about{
-    width: 18%;
-}
-#about .content-about .box-img-about img{
+#about .container .container-fluid p{   text-align: justify;}
+#about .container .container-fluid #read-more-text{    display: none;  }
+#about .container .box-img-about{   width: 20%;}
+#about .container .box-img-about img{
     width: 100%;
-    border-radius: 50%;
-    box-shadow: 0px 16px 40px #00000050;
     opacity: 0.9;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 /*===============projects style section =================*/
-#big-projects {
-    background-color: #1a595d;
+.container-fluid p{
+    text-align: justify;
+}
+/*=============== the style of other cool stuff in the section of project */
+#other .other-stuff{ 
+    display: grid;
+    grid-gap: 1.5rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr)  ;
+    grid-template-rows: repeat(2, 1fr)  ;
     height: auto;
-    width: 100% ;
+}
+.card {
+    border: 2px solid #6d6d6d;
+    box-shadow: 0px 8px 10px #7d7d7db0;
+    overflow: hidden;
+}
+.card img{
+    height: 100%;
+}
+
+.card .card-body {
+    flex: 0 0 0;
+}
+
+/*====================================contact============================*/
+.container form  label{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    display: block;
+}
+.container form > input, .container form  textarea  {
+    text-align: start;
+    height: 45px;
+    outline: none;
+    margin: 1rem 0;
+    transition: ease-in-out .25s;
+    color: #fff;
+}
+.container form > input:hover, .container form  textarea:hover  {
+    background-color: #1d819f9a;
+}
+
+.container form  textarea {
+    height: 150px;
+}
+/* ==== ==========================*/
+.contact-info {
+    width: 90%;
+    display: flex;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.contact-info .card-info {
+    width: 390px;
+    border-bottom: 4px solid #1D809F;
+    height: 200px;
+    border-radius: 4px;
+    color: #000;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 0;
+    align-items: center;
 }
-.content-project {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: 85% ;
-    border: 1px solid #eee;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    margin-left: calc((15% - 2px - 4rem) / 2);
-}
-#big-projects .box-content-project {
-    width: 100%;
-    height: 100%;
-}
-
-.content-project-text  {
-    color: #fff;
-    width: 50%;
-    padding: 1rem;
-    text-align: center;
-}
-.content-project-text h2{
-    color: #fff;
-
-}
-.content-project-text p{
-    text-align: justify;
-    text-align: left;
-    line-height: 1.5em;
-    font-size: 1rem;
-    color: rgb(223, 223, 223);
-}
-.content-project-text a{
-    display: inline;
-    margin: 4px;
+.contact-info .card-info p {
+    text-transform: capitalize;
     letter-spacing: 1.5px;
+    margin: 4px 0;
 }
-.content-project-video{
+.contact-info .card-info .hr {
+    color: #1d1d1d;
+    border: 1px solid ;
+    width: 30%;
+    margin: 8px
+}
+
+.card-info i {
+    font-size: 25px;
+    color: #1a595d;
+}
+
+/* ============== footer ===========*/
+.footer {
+    display: flex;
+    justify-content: center;
+
+}
+.footer .social-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-}
-.content-project-video video{
-    width: 100%;
-    height: auto;
-    border: 2px solid #eee;
-    border-radius: 4px;
-}
-
-/*=============== the style of other cool stuff in the section of project */
-#other {
-  height: auto;
-    width: 100%;
-    background-color: #eee;
-
-    
-}
-#other .other-stuff {
-    display: grid;
-    grid-gap: 1.5rem;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
-    height: auto;
-}
-#other .other-stuff .box-project  {
-    background-color: rgb(230, 190, 90);
-    position: relative;
-    height: 300px;
-    border: 1px solid rgba(155, 153, 153, 0.767);
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 4px 10px 10px  rgba(0, 0, 0, 0.555);
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem; 
+    font-size: 1.5rem;
+    background-color: #1D809F;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
 }
 
-#other .other-stuff .box-project .box-img,
-#other .other-stuff .box-project .box-img img {
-    width: 100%;
-    height: 100%;
-}
-#other .other-stuff .box-project .box-project-text {
-    width: 100%;
-    height: 100px;
-    background-color: #e0e0e0;
-    text-align: center;
-    padding-bottom: 2px;
-    position: absolute;
-    bottom: 0;
-    transition: ease-in-out .3s;
-}
-#other .other-stuff .box-project .box-project-text p {
-    color: #333;
-    text-transform: capitalize;
-}
-#other .other-stuff .box-project .box-project-text a {
-    margin: 4px 8px;
-    color: #333;
-    border: 1px solid #333;
-    padding: 5px;
-}
-#other .other-stuff .box-project .box-project-text a i {
-    margin-right: 3px;
-}
-#other .other-stuff .box-project:hover > .box-img {
-    opacity: 0.8;
-}
-#other .other-stuff .box-project:hover > .box-project-text {
-    height: 108px;
-    transform: scaleY(-8px);
-    transition: ease-in-out .3s;
-    background-color: rgb(230, 190, 90);
-
-}
-/*====================================contact============================*/
-.contact {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #000;
-}
-/*============form==========*/
-.contact .formBx {
-    width: 55%;
-    border-right: 1px solid #fff;
-}
- h2{
-    text-transform: capitalize;
-    font-size: 2rem;
-    color: rgb(65, 65, 65);
-    letter-spacing: 1.4px;
-    margin: 2rem;
-}
-.formBx form  label{
-    display: block;
-    font-size: 1.2rem;
-    color: #fff;
-    letter-spacing: 2px;
-}
-.formBx form input, .formBx form  textarea  {
-    width: 70%;
-    height: 35px;
-    padding: 8px 8px 8px 15px;
-    outline: none;
-    margin: 1rem 0;
-    font-size: 1rem;
-    border: 0.5px solid rgba(255, 255, 255, 0.623);
-    background-color: #41414134;
-    transition: ease-in-out .3s;
-    color: #fff;
-}
-.formBx form  textarea {
-    height: 150px;
-}
-
-.formBx form  input[type="submit"], .formBx form  input[type="reset"]{
-    display: inline;
-    width: 150px;
-    outline: none;
-    text-transform: capitalize;
-    color: #000;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: ease-in .2s;
-    margin-left: 10px;
-    letter-spacing: 2px;
-}
-
-.formBx form  input[type="submit"]:hover,.formBx form  input[type="reset"]:hover{
-    background: #f1f1f1ce;
-    color: rgb(255, 0, 0);
-    font-weight: 700;
-  
-}
-
-/* the style of the second parte of contact section */
-.contact .contactInfo {
-    width: 45%;
-}
-
-.contact .contactInfo .info p{
-    font-size: 1.4rem;
-    margin : 0 0 2rem 2rem;
-    color: #fff;
-    letter-spacing: 1px;
-}
-.contact .contactInfo .info p i{
-    margin-bottom: 1rem;
-}
-.contact .contactInfo .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.contact .contactInfo .social a{
-    color: #575757;
-    font-size: 1.4rem;
-    margin-left: 1.5rem;
-}
-.contact .contactInfo .social a i{
-    transition: ease-in-out .4s;
-
-}
-.contact .contactInfo .social a:hover > i{
-    color: #fff;
-    transform: scale(1.3);
-} 
