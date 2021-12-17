@@ -219,7 +219,7 @@ main #home .social-media a i:hover{
     outline: none;
     margin: 1rem 0;
     transition: ease-in-out .25s;
-    color: #fff;
+    color: #000;
 }
 .container form > input:hover, .container form  textarea:hover  {
     background-color: #1d819f9a;
