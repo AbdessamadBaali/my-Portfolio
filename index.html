@@ -18,7 +18,7 @@
      
     </head>
     <body> 
-        <!-- the header part of my portfolio -->
+        <!--|||||||||| the header part of my portfolio ||||||||||||-->
         <header>
             <!-- logo -->
             <div class="logo">
@@ -40,7 +40,7 @@
                 </ul>
             </nav>
         </header>
-        <!-- the home section -->
+        <!--||||||||||| the home section |||||||||||||-->
         <main>
             <div id="home">
                 <video src="videos/bgvideo.mp4" loop muted autoplay></video>
@@ -50,15 +50,15 @@
                     <q class="fw-lighter text-white fs-5 text-center">Website without visitors is like a ship lost in the horizon</q>
                 </div>
                 <div class="social-media">
-                    <a class="fs-1" target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    <a class="fs-1" target="_blank" href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a class="fs-1" target="_blank" href="https://www.instagram.com/abdess_m_db__li/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a class="fs-2" target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a class="fs-2" target="_blank" href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="fs-2" target="_blank" href="https://www.instagram.com/abdess_m_db__li/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
         </main>
-        <!-- the about section -->
+        <!--||||||||||| the about section ||||||||||-->
         <section id="about" >
-            <div class="container ">
+            <div class="container w-75">
                 <div class="container-fluid">
                     <h2 class="h2">about me</h2>
                     <p class="fw-lighter fs-6 text-dark"> 
@@ -66,44 +66,113 @@
                         in Html5 css and javaScript  with decent knowledge in other technologie
                         in the field as well. For an in-depth insight into my skills and qualification
                         I invite you to check out <a class="pe-auto" href="#"> my Resume</a>.
-                        <br>
-                        <!-- this part is for read more -->
-                        <span id="read-more-text">
-                            As I said before, my name is Abdessamad. I'm a 20 years old young man from Morocco.
-                            I first found out about this programming field last year and liked it so much,
-                            so I decided that is what I'm gonna do. After doing a ton of research on the internet,
-                            I did find that it's a large domain, and it's possible to get into this industry without
-                            a degree by being self-taught. After that, I picked web development because it's kind 
-                            of holding the stick from the middle, and you can transact to related fields later.
-                            So I departed on this journey.
-                            <br>
-                            I used a wide collection of resources in my learning, 
-                            from <a class="pe-auto" target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a class="pe-auto" target="_blank" href="https://developer.mozilla.org/">MDN</a>  to YouTube
-                            (I watched so many videos from these channels: Traversy media, Web Dev Simplified, Fireship, and so many others).
-                            solved so many algorithmic challenges over HackerRank,
-                            and build so many projects. I devoted all of my time and effort to this. 
-                            I even moved out of my house and city and lived by myself so I can focus on my new career.
-                            It was a rough journey, full of hard times and bugs.
-                            But I didn't give up and I won't do. And here I'm, 
-                            after several months of constant battle. That was a quick glimpse into my journey, 
-                            hope you like it.
-                          </span>
                     </p>
+                    <!-- this part is for read more -->
+                    <div class="collapse " id="collapseExample">
+                        <div class="card card-body ">
+                            <p>
+                                As I said before, my name is Abdessamad. I'm a 20 years old young man from Morocco.
+                                I first found out about this programming field last year and liked it so much,
+                                so I decided that is what I'm gonna do. After doing a ton of research on the internet,
+                                I did find that it's a large domain, and it's possible to get into this industry without
+                                a degree by being self-taught. After that, I picked web development because it's kind 
+                                of holding the stick from the middle, and you can transact to related fields later.
+                                So I departed on this journey.
+                                <br>
+                                I used a wide collection of resources in my learning, 
+                                from <a class="pe-auto" target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a class="pe-auto" target="_blank" href="https://developer.mozilla.org/">MDN</a>  to YouTube
+                                (I watched so many videos from these channels: Traversy media, Web Dev Simplified, Fireship, and so many others).
+                                solved so many algorithmic challenges over HackerRank,
+                                and build so many projects. I devoted all of my time and effort to this. 
+                                I even moved out of my house and city and lived by myself so I can focus on my new career.
+                                It was a rough journey, full of hard times and bugs.
+                                But I didn't give up and I won't do. And here I'm, 
+                                after several months of constant battle. That was a quick glimpse into my journey, 
+                                hope you like it.
+                            </p>          
+                        </div>
+                    </div> 
                     <!-- btn onclick display span of read more -->
-                    <span class="btn btn-outline-danger" onclick="readMoreScript()" id="read-more-btn">Read More...</span>
+                    <p>  
+                        <a id="read-more-btn" onclick=" readMoreScript()" class="btn btn-outline-danger mt-3" data-bs-toggle="collapse" href="#collapseExample" >
+                            Read More...
+                        </a>
+                    </p>
+        
                 </div>
+                <!-- this is the  box of the imag -->
                 <div class="box-img-about">
-                    <img class="rounded-circle" src="images/me.jpg" alt="">
+                    <img class="rounded-circle " src="images/me.jpg" alt="">
                 </div>
             </div> 
         </section>
-        <!-- projects section -->
-        <h2 class="h2 m-5">projects</h2>
-        <section id="big-projects" class="container m-auto row " >
-        <!-- the first project -->
+        <!-- ||||||||||||||| skills |||||||||||||| -->
+        <section id='skills' class="container-fluid p-5 ">
+            <h2 class="fs-1 fw-lighter mb-3  text-dark ">skills</h2>
+            <h3 class="h3 p-4">programming languages & tools</h3>
+            <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-3 justify-content-center">
+                <div>
+                    <i class="fab fa-html5 fs-3 "></i> <span class="fs-3">html5</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-css3 fs-3"></i>  <span class="fs-3">css3</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 85%"></div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-js fs-3 "></i>  <span class="fs-3">javaScripit</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-bootstrap fs-3"></i> <span class="fs-3">bootstrap</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-python fs-3 "></i><span class="fs-3">python</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 30%"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--||||||||||||| projects section |||||||||| --> 
+        <section id="big-projects" class="container-fuild  p-5 row " >
+            <h2 class="h2 mx-5 my-3">projects</h2>
+            <!-- the first project -->
             <div class="w-50">       
                 <div class="container-fluid ">
                     <h3 class="h3">personnal web site (portfolio) </h3>
+                    <p class="text-dark fs-6 lh-base fw-lighter" >  
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    </p>
+                    <div class=" btn-group">
+                        <a class="btn btn-outline-warning" href="https://omarkabiri2.netlify.app/" target="_blank">vieu</a>
+                        <a class="btn btn-outline-warning" href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
+                    </div>
+                </div>
+                <div class="w-100 mt-4 ">
+                    <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project01.mp4" alt="this a video of this project" controls ></video>
+                </div>
+            </div>
+            <!-- the second project -->
+            <div class="w-50">
+                <div class="container-fuild w-100">
+                    <h3 class="h3">anime website  </h3>
                     <p class="text-dark fs-6 lh-base fw-lighter" >  
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -118,100 +187,80 @@
                         <a class="btn btn-outline-warning" href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
                     </div>
                 </div>
-                <div class="w-100 mt-4 ">
-                    <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project01.mp4" alt="this a video of this project" controls ></video>
+                <div class="w-100 mt-4">
+                    <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project2.mp4" alt="this a video of this project" controls ></video>
                 </div>
             </div>
-            <!-- the second project -->
-                <div class="w-50">
-                    <div class="container-fuild w-100">
-                        <h3 class="h3">anime website  </h3>
-                        <p class="text-dark fs-6 lh-base fw-lighter" >  
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
-                            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                        </p>
-                        <div class=" btn-group">
-                            <a class="btn btn-outline-warning" href="#" target="_blank">vieu</a>
-                            <a class="btn btn-outline-warning" href="https://github.com/AbdessamadBaali/portfolio-of-omar"><i class="fab fa-github"></i>github</a>
+        </section>
+        <!--|||||||||||||| other cool stuff section|||||||||||| -->
+        <section id="other" class="container-fluid pb-5 ">  
+            <h2 class="h2 m-5">other cool stuff</h2>
+            <div class="container-fluid">
+                <div class="other-stuff d-flex flex-wrap  justify-content-center " >
+                    <!-- card one -->
+                    <div class="card shadow ">
+                        <img src="images/jsDocumentation.png" class="img-fuild " alt="photo of the projoct javaScripit">
+                        <div class="card-body">
+                          <h5 class="fs-5">js documentation</h5>
+                          <p class="fs-6">this project is about a documentation of javaScripit (Html5, css) .</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/js-documentation" target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                        </div>
+                      </div>
+                    <!-- card two -->
+                    <div class="card shadow ">
+                        <img src="/images/billGates.png" class="card-img-top" alt="photo of the projoct documentation of bill billGates">
+                        <div class="card-body">
+                          <h5 class="fs-5">bill Gates documentation</h5>
+                          <p class="fs-6">this project is about a documentation of bill Gates (Html5, css).</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/Bills-Gates-doc"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
                         </div>
                     </div>
-                    <div class="w-100 mt-4">
-                        <video class="w-100 border rounded-2 border-3 border-dark" src="videos/project2.mp4" alt="this a video of this project" controls ></video>
+                    <!-- card three -->
+                    <div class="card shadow ">
+                        <img src="/images/form.png"  class="card-img-top"alt="photo of the projoct documentation of bill billGates">
+                        <div class="card-body">
+                          <h5 class="fs-5">inprove the platform</h5>
+                          <p class="fs-6">this is a form for inprove the platform.</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/form" target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                        </div>
                     </div>
-                </div>
+    
+                    <div class="card shadow " >
+                        <img src="/images/store of basketball.png"  class="card-img-top" alt="photo of the projoct store of basketball">
+                        <div class="card-body">
+                          <h5 class="fs-5">store of basketball</h5>
+                          <p class="fs-6">this project about store of basketball</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/stor-of-basketball"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                        </div>
+                    </div>
+    
+                    <div class="card shadow " >
+                        <img src="/images/blackJack.png" class="card-img-top" alt="photo of the project game blackJack">
+                        <div class="card-body">
+                          <h5 class="fs-5">black Jack game</h5>
+                          <p class="fs-6">this project is a small game (HTML, css, js)</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                        </div>
+                    </div>
+    
+                    <div class="card shadow " >
+                        <img src="/images/changeBackgound.png" class="card-img-top" alt="photo of the projoct store of basketball">
+                        <div class="card-body">
+                          <h5 class="fs-5">change background color</h5>
+                          <p class="fs-6">this project is change backgroundClor (HTML, css, js)</p>
+                          <a href="#" class="btn btn-outline-primary">vieus</a>
+                          <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </section>
-        <!-- other cool stuff section -->
-        <h2 class="h2 m-5">other cool stuff</h2>
-        <section id="other" class="container-fluid pb-5 ">  
-            <div class="other-stuff container m-auto " >
-                <!-- card one -->
-                <div class="card ">
-                    <img src="images/jsDocumentation.png" class="card-img-top" alt="photo of the projoct javaScripit">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this project is about a documentation of javaScripit (Html5, css) .</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/js-documentation" target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                  </div>
-                <!-- card two -->
-                <div class="card">
-                    <img src="/images/billGates.png" class="card-img-top" alt="photo of the projoct documentation of bill billGates">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this project is about a documentation of bill Gates (Html5, css).</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/Bills-Gates-doc"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-                <!-- card three -->
-                <div class="card">
-                    <img src="/images/form.png"  class="card-img-top"alt="photo of the projoct documentation of bill billGates">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this is a form for inprove the platform.</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary"  href="https://github.com/AbdessamadBaali/form" target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="/images/store of basketball.png"  class="card-img-top" alt="photo of the projoct store of basketball">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this project about store of basketball</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/stor-of-basketball"  target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-
-                <div class="card " >
-                    <img src="/images/blackJack.png" class="card-img-top" alt="photo of the projoct store of basketball">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this project is a small game (HTML, css, js)</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="/images/changeBackgound.png" class="card-img-top" alt="photo of the projoct store of basketball">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">this project is change backgroundClor (HTML, css, js)</p>
-                      <a href="#" class="btn btn-outline-primary">vieus</a>
-                      <a  class="btn btn-outline-primary" href="https://github.com/AbdessamadBaali/blackJack"   target="_blank"> <i class="fab fa-github fa"></i>github</a>
-                    </div>
-                </div>
-            </div>  
-        </section>
-        <!-- services  -->
+        <!--|||||||||||||||| services |||||||||||||| -->
         <section id="services" class="p-5 bg-info">
             <h2 class="h2 mb-5 text-center text-white ">what we offer</h2>
             <div class="row justify-content-around">
@@ -223,7 +272,7 @@
                 <div class="container col-md-4 col-sm-5 p-2 text-center">
                     <i class="fa fa-pen text-primary bg-white border rounded-circle fs-2 p-4 m-2"></i>
                 <h4>Redisigned</h4>
-                <p>Freshlt redisigned for bootstrap</p>
+                <p>Freshlt redisigned for you !</p>
                 </div>
                 <div class="container col-md-4 col-sm-5 p-2 text-center">
                     <i class="fa fa-microphone text-primary bg-white border rounded-circle fs-2 p-4 m-2"></i>
@@ -232,54 +281,51 @@
                 </div> 
             </div>
         </section>
-        <!-- contact section -->
-        <h2 class="h2 m-5">Contact Us</h2>
-        <section  class="container-fuild" id="contact" >
+        <!-- |||||||||||||contact section |||||||||||||-->
+        <section  class="container-fuild bg-white" id="contact" >
+            <h2 class="h2 m-5">Contact Us</h2>
             <div class="container w-50 m-auto" > 
-                <form action="" method="get">
-                    <label class="text-info" for="full name">Name</label>
-                    <input  class="btn btn-outline-primary w-100" id="full name" type="text" name="name" placeholder="Full Name" required
+                <form id='form-contact' action="" method="get">
+                    <label class="text-info" for="name">Name</label>
+                    <input  class="btn btn-outline-primary w-100" id="name" type="text" name="name" placeholder="Full Name" required
                     minlength="8"  maxlength="20">
 
                     <label class="text-info" for="mail">Email</label>
                     <input class="btn btn-outline-primary w-100" id="mail" type="email" name="mail" placeholder="Email" required>
 
                     <label class="text-info" for="msg">Your Message</label>
-                    <textarea  class="btn btn-outline-primary w-100 "id="msg" name="msg" placeholder="Write Your Message Here" id required > </textarea>
+                    <textarea  class="btn btn-outline-primary w-100 "id="msg" name="msg" placeholder="Write Your Message Here" required > </textarea>
                     <br>
                     <div class="btn-group">
                         <input class="btn btn-outline-primary" type="submit" value="send" >
                         <input class="btn btn-outline-primary" type="reset" value="reset" >    
                     </div>
                 </form>
-                <div class="logo">
-                    <a href="index.html" title="home">baaliDev</a>
-                    <a href="index.html" title="home">baaliDev</a>
-                </div>
             </div> 
-            <div class="contact-info">
-                <div class="card-info">
-                    <i class="fa fa-map-marked"></i>
+            <div class=" container-fluid my-4 bg-white row mx-auto
+                         row-cols-lg-4   row-cols-md-3 row-cols-sm-2 justify-content-center">
+                <div class="card-info m-2">
+                    <i class="fa fa-map-marked fs-2"></i>
                     <p>address</p>
                     <span class="hr text-muted"></span>
                     <p class="text-muted">Lot Ain Aghbal Ahadaf Azrou</p>
                 </div>
-                <div class="card-info">
-                    <i class="fa fa-envelope "></i>
+                <div class="card-info m-2">
+                    <i class="fa fa-envelope fs-2"></i>
                     <p>email</p>
                     <span class="hr text-muted"></span>
                    <a class="text-muted" href="">baaliabdessamad3@gmail.com</a>
                 </div>
-                <div class="card-info">
-                    <i class="fa fa-phone"></i>
+                <div class="card-info m-2">
+                    <i class="fa fa-phone fs-2"></i>
                     <p>phone</p>
                     <span class="hr text-muted"></span>
                     <p class="text-muted">+212 641336504</p>
                 </div>
             </div> 
         </section>
-        <!-- footer section  -->
-        <footer class="footer text-center">
+        <!--|||||||||| footer section ||||||||||| -->
+        <footer class="footer text-center ">
             <div class="container m-4 px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
@@ -306,5 +352,6 @@
         </footer>
         <!-- java scripr link  -->
         <script src="/javaScripit/script.js"></script>
+        <script src="styles/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     </body>
 </html>

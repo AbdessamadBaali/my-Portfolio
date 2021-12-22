@@ -1,7 +1,7 @@
 nav .menu-btn,
 .menu-icon{		display : none;	}
 /* ==================RESPONSIVE OF 900PX==================== */
-@media screen and (max-width:900px) {
+@media screen and (max-width:992px) {
 /*  responsive of navbar for max width 900px */
 header nav{
 	height: 65px;
@@ -77,31 +77,24 @@ nav .menu-btn:checked ~ ul {
 	display: block;
 	background-color: #40c6d8;
 }
+
+#about .w-75 {
+	width: 90% !important;
+}
 #about .content-about .box-img-about{	width: 0%;}
-#about .container .box-img-about{   width: 0%;}
+#about .container .box-img-about img{  display: none;}
 #big-projects .w-50 {
 	width: 100% !important;
 }
-/* other cool stuff */
-#other .other-stuff {
-    width: 95%;
-    padding: 0rem;
-    grid-template-columns: auto auto auto  ;
-    grid-template-rows: auto auto auto  ;
-}
+
 }
 /* ====================RESPONSIVE 720PX =========================== */
-@media(max-width : 720px){
+@media(max-width : 768px){
+
 #about .container::before {  width: 0vw;}
-/* other cool stuff */
-#other .other-stuff {
-    width: 90%;
-    grid-template-columns: auto auto   ;
-    grid-template-rows: auto auto   ;
-}
 #contact .w-50 {	width: 100% !important;}
 }
-@media(max-width : 520px){ 
+@media(max-width : 576px){ 
 	/* home section */
 	#home .display-3 {
 		font-size: 26px;
@@ -119,14 +112,12 @@ nav .menu-btn:checked ~ ul {
 	#about .container {
 		width: 100% !important;
 		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid #000;
+		box-shadow: none;
 	}
 	/* project section */
 	#big-projects {
 		padding: 0 ;
-	}
-	#other .other-stuff {
-		width: 100%;
-		grid-template-columns:  auto   ;
-		grid-template-rows:  auto   ;
 	}
 }

@@ -1,48 +1,28 @@
 // read more btn script
-let about = document.getElementById("about")
+let changeReadMore = document.querySelector("#read-more-btn")
 
-let boxText = document.getElementsByClassName("box-text-about")
-
-let parentContainer =  document.getElementById('read-more-text');
-
-let changeReadMore = document.getElementById("read-more-btn")
-let contentAbout = document.querySelector('.content-about')
 
 function readMoreScript() {
 
     if (changeReadMore.textContent === "Read More...") {
-
          changeReadMore.textContent = "Read Less..."
-
-         parentContainer.style.display = "block"
-         parentContainer.style.height = "auto"
-         
-         about.style.height = "auto"
-         contentAbout.style.alignItems = "start"
-         about.style.margin = " 40px 0"
-
-
-    } else {
-        changeReadMore.textContent = "Read More..."
         
-        parentContainer.style.display = "none"
-
-        about.style.height = "auto"
-        contentAbout.style.alignItems = "center"
-        about.style.margin = "0px"
+    } else if (changeReadMore.textContent === "Read Less...") {
+        changeReadMore.textContent = "Read More..."
+    } else {
+        changeReadMore.textContent = "Read Less..."
     }
 }
 
 // forme
 const sendFeedback = (emailjs, serviceID, templateId, variables, userId) => {
     emailjs.send(serviceID, templateId, variables, userId).then(res => {
-        console.log('Email successfully sent!')
+        alert('Email successfully sent!')
     })
-        .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
+        .catch(err => alert.error('There has been an error.  Here some thoughts on the error that occured:', err))
 }
 $("form-contact").submit((e) => {
     e.preventDefault()
-
     const name = e.target[0].value
     const email = e.target[1].value
     const message = e.target[2].value
