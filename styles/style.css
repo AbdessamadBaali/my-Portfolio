@@ -103,8 +103,7 @@ main {
     height: 95vh;
     width: 100%;
     position: relative;
- }
-
+}
  main #home video{
     object-fit: cover;
     width: 100%;
@@ -113,7 +112,7 @@ main {
     top: 0;
     left: 0;
     z-index: -1;
- }
+}
 main #home .content-home {
     width: 100%;
     display: flex;
@@ -121,6 +120,7 @@ main #home .content-home {
     align-items: center;
     position: absolute;
     top: 30%;
+
 }
 .content-home h1,.content-home h2,.content-home q{
     margin: 0;
@@ -157,13 +157,11 @@ main #home .social-media a i:hover{
     padding: 2rem;
 }
 #about .container {
-    
-    border: 0.8px solid #858585d3;
     box-shadow: 0px 2px 30px 0 #858585ce;
     padding: 1.5rem;
     border-radius: 4px;
     display: flex;
-    align-items: center;
+
 }
 #about .container::before {
     content: "";
@@ -180,10 +178,8 @@ main #home .social-media a i:hover{
 }
 #about .container .container-fluid p{   text-align: justify;}
 #about .container .box-img-about img{
-    width: 150px;
+    width: 190px;
     height: 190px;
-    border: 6px solid #0000002a;
-    opacity: 0.9;
 }
 /* ================skills ============ */
 
