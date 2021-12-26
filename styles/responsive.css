@@ -77,16 +77,10 @@ nav .menu-btn:checked ~ ul {
 	display: block;
 	background-color: #40c6d8;
 }
-
-#about .w-75 {
-	width: 90% !important;
-}
+#about .w-75 {	width: 90% !important;}
 #about .content-about .box-img-about{	width: 0%;}
 #about .container .box-img-about img{  display: none;}
-#big-projects .w-50 {
-	width: 100% !important;
-}
-
+#big-projects .w-50 {	width: 100% !important;}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
@@ -96,20 +90,18 @@ nav .menu-btn:checked ~ ul {
 }
 @media(max-width : 576px){ 
 	/* home section */
-	#home .display-3 {
-		font-size: 26px;
+	.content-home h2,.content-home q{
+		-webkit-text-stroke: 0px  rgb(255, 255, 255);
+		text-shadow: none;
 	}
-	#home .fs-3 {
-		font-size: 18px !important;
-	}
-	#home .fs-5 {
+	#home .waviy{	font-size: 20px !important;}
+	#home .fs-3 {	font-size: 18px !important;}
+	#home .fs-4, #home .fs-5 {
 		font-size: 14px !important;
 		margin: 0;
 	}
 	/* about section */
-	#about {
-		padding: 0;
-	}
+	#about {padding: 0;}
 	#about .container {
 		width: 100% !important;
 		border: none;
@@ -118,10 +110,9 @@ nav .menu-btn:checked ~ ul {
 		box-shadow: none;
 	}
 	/* project section */
-	#big-projects {
-		padding: 0 ;
-	}
-	#skills+.row {
-		padding: 0!important;
+	#big-projects {	padding: 0 ;}
+	#skills+.row {	padding: 0!important;}
+	#other .shadow {
+		box-shadow: none !important;
 	}
 }
