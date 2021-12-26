@@ -103,12 +103,9 @@ main {
     height: 95vh;
     width: 100%;
     position: relative;
-    background-image: url('../images/imagespexels-efrain-alonso-3584283.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
- /* main #home video{
-    object-fit: cover;
+ main #home video{
+    object-fit: fill;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -116,7 +113,7 @@ main {
     left: 0;
     z-index: -1;
 
-} */
+}
 main #home .content-home {
     width: 100%;
     display: flex;
