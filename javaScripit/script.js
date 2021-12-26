@@ -11,7 +11,7 @@ function readMoreScript() {
         changeReadMore.textContent = "Read More..."
     } else {
         changeReadMore.textContent = "Read Less..."
-    }
+    } 
 }
 
 // forme

@@ -9,7 +9,7 @@ body {
     background-color: #fff;  
     width: 100%;
 }
-
+ 
 /* generation style */
 
 h2,h1,h3{
@@ -23,17 +23,20 @@ h2,h1,h3{
 h3 {
     font-weight: normal;
 }
+.btn {
+    box-shadow: none!important;
+
+}
 
 /* ============ header =============*/
  
 header {
-    background-color: #000000;
-    box-shadow: 0 -8px 40px rgba(238, 238, 238, 0.226);
+    background-color: #132028b4;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 99;
+    z-index: 1;
     width: 100%;
     height: 55px;   
 }
@@ -69,23 +72,20 @@ header {
         clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%,100% 46%,100% 100%,0% 100%) ;
     }
 }
-
-
 header nav {
     position: relative;
+
 }
 header nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto!important;
 }
 header nav ul li{
     list-style: none;
 }
 
-header nav ul li:nth-child(5){
-    margin-right: 50px;
-}
 header nav ul li a{
     color: #fff;
     text-transform: capitalize;
@@ -103,8 +103,11 @@ main {
     height: 95vh;
     width: 100%;
     position: relative;
+    background-image: url('../images/imagespexels-efrain-alonso-3584283.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
- main #home video{
+ /* main #home video{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -112,7 +115,8 @@ main {
     top: 0;
     left: 0;
     z-index: -1;
-}
+
+} */
 main #home .content-home {
     width: 100%;
     display: flex;
@@ -129,6 +133,7 @@ main #home .content-home {
 main #home .content-home h1{
     margin: 10px 0;
     letter-spacing: 4px;
+    text-emphasis-color: linear-gradient(45deg, red,blue);
 }
 
 main #home .social-media{
@@ -140,7 +145,7 @@ main #home .social-media{
 }
 
 main #home .social-media a i{
-    color: #6d6d6d;
+    color: #000;
     transition: ease-out .28s;
 }
 main #home .social-media a i:hover{
@@ -167,7 +172,7 @@ main #home .social-media a i:hover{
     content: "";
     width: 16vw;
     height: 16vw;
-    background: linear-gradient( to right bottom, rgb(152 152 152 / 66%), #d4d4d400);
+    background: linear-gradient( 120deg, rgba(243, 243, 243, 0.829), #2d8eb886);
     box-shadow: 0px 16px 40px #00000025;
     border-radius: 50%;
     position: absolute;
@@ -181,6 +186,11 @@ main #home .social-media a i:hover{
     width: 190px;
     height: 190px;
 }
+#collapseExample .card{
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+}
 /* ================skills ============ */
 
 #skills  .row  i{ 
@@ -189,6 +199,7 @@ main #home .social-media a i:hover{
 /*===============projects style section =================*/
 #big-projects {
     background-color: whitesmoke;
+    margin: 0!important;
 }
 .container-fluid p{
     text-align: justify;
@@ -207,6 +218,19 @@ main #home .social-media a i:hover{
 
 .card .card-body {
     flex: 0 0 0;
+}
+#services .container {
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+}
+#services .container i{
+    color: rgb(3, 126, 197);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 10px;
 }
 
 /*====================================contact============================*/
