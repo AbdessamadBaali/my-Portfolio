@@ -104,6 +104,7 @@ nav .menu-btn:checked ~ ul {
 	}
 	#home .fs-5 {
 		font-size: 14px !important;
+		margin: 0;
 	}
 	/* about section */
 	#about {
@@ -120,7 +121,7 @@ nav .menu-btn:checked ~ ul {
 	#big-projects {
 		padding: 0 ;
 	}
-	#skills+.p-5 {
+	#skills+.row {
 		padding: 0!important;
 	}
 }
