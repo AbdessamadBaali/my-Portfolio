@@ -89,6 +89,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
  /* main #home video{
     object-fit: fill;
     width: 100%;
@@ -107,35 +108,15 @@ main #home .content-home {
     position: absolute;
     top: 30%;
 }
-.content-home h2,.content-home q{
+.content-home h1,.content-home h2,.content-home q{
     margin: 0;
     letter-spacing: 1.4px;
-    -webkit-text-stroke: .5px  #000;
+    color: #fff;
+    -webkit-text-stroke: .2px  #000;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.884);
 }
-.waviy {
-    position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-  }
-  .waviy span {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    color: rgb(49, 206, 198);
-    -webkit-text-stroke: .2px  #000;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.664);
-    text-transform: uppercase;
-    animation: waviy 2s infinite;
-    animation-delay: calc(.1s * var(--i));  
-  }
-  @keyframes waviy {
-    0%,20%,40%,60%,100% {
-      transform: translateY(0)
-    }
-    20% {transform: translateY(-20px) }
-  }
-main #home .content-home q {   -webkit-text-stroke: 0px;}
+.content-home h1{ color: #1D809F;}
+main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
     display: flex;
     flex-direction: column;
@@ -191,12 +172,15 @@ main #home .social-media a i:hover{
 #skills  .row  i{   margin: 10px 0;}
 /*===============projects style section =================*/
 #big-projects {
-
     margin: 0!important;
+}
+#big-projects  .row > .project {
+    margin: 25px 0;
 }
 #big-projects> div .project-one {
     width: 100%;
     height: 350px;
+    border: 1px solid #00000049;
     border-radius: 30px;
     transition: 0.4s ease all;
 }
@@ -216,7 +200,12 @@ main #home .social-media a i:hover{
 .card img{height: 180px;}
 .card .card-body {  flex: 0 0 0;}
 #services {
-    background-color: #1a595d80;
+
+    background: linear-gradient(13deg, 
+    rgba(34,193,195,1) 0%,
+    rgba(102,190,152,1) 36%,
+    rgb(147, 181, 197) 100%
+      );
 }
 #services .container {
     text-align: center;
@@ -277,8 +266,11 @@ main #home .social-media a i:hover{
     display: flex;
     justify-content: center;
     background-color: #000800;
+    clip-path: polygon(24% 1%, 70% 6%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 11%);
+
 }
 .footer .social-link {
+
     display: flex;
     justify-content: center;
     align-items: center;
