@@ -69,32 +69,17 @@ header {
         clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%,100% 46%,100% 100%,0% 100%) ;
     }
 }
-header nav {
-    position: relative;
-
-}
-header nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto!important;
-}
-header nav ul li{
-    list-style: none;
-}
-
+header nav { position: relative;}
 header nav ul li a{
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     text-transform: capitalize;
     letter-spacing: 1px;
-    text-decoration: none;
     transition: ease-in-out .3s;
 }
 header nav ul li a:hover{
-    color: rgb(34, 162, 194);
+    color: rgba(9, 173, 132, 0.774)!important;
 }
-
 /*===================== MAIN STYLE ===========*/
 main {
     height: 95vh;
@@ -121,7 +106,6 @@ main #home .content-home {
     align-items: center;
     position: absolute;
     top: 30%;
-
 }
 .content-home h2,.content-home q{
     margin: 0;
@@ -129,7 +113,6 @@ main #home .content-home {
     -webkit-text-stroke: .5px  #000;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.884);
 }
-
 .waviy {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -139,26 +122,20 @@ main #home .content-home {
     font-weight: bold;
     position: relative;
     display: inline-block;
-    color: rgb(18, 138, 132);
+    color: rgb(49, 206, 198);
     -webkit-text-stroke: .2px  #000;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.664);
     text-transform: uppercase;
     animation: waviy 2s infinite;
-    animation-delay: calc(.1s * var(--i));
-    
+    animation-delay: calc(.1s * var(--i));  
   }
   @keyframes waviy {
     0%,20%,40%,60%,100% {
       transform: translateY(0)
     }
-    20% {
-      transform: translateY(-20px)
-    }
+    20% {transform: translateY(-20px) }
   }
-
-main #home .content-home q {
-    -webkit-text-stroke: 0px;
-}
+main #home .content-home q {   -webkit-text-stroke: 0px;}
 main #home .social-media{
     display: flex;
     flex-direction: column;
@@ -166,7 +143,6 @@ main #home .social-media{
     bottom: 10%;
     right: 2%;
 }
-
 main #home .social-media a i{
     color: #000;
     transition: ease-out .28s;
@@ -178,20 +154,16 @@ main #home .social-media a i:hover{
 /*=================== style of about section ============ */
 #about {
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     padding: 2rem;
 }
-#about .container {
+#about .w-75 {
     box-shadow: 0px 2px 30px 0 #858585ce;
     padding: 1.5rem;
     border-radius: 4px;
     display: flex;
-
 }
-#about .container::before {
+#about .w-75::before {
     content: "";
     width: 16vw;
     height: 16vw;
@@ -204,10 +176,11 @@ main #home .social-media a i:hover{
     z-index: -1;
     -webkit-border-radius: 50%;
 }
-#about .container .container-fluid p{   text-align: justify;}
-#about .container .box-img-about img{
-    width: 190px;
-    height: 190px;
+#about .w-75 .container-fluid p{   text-align: justify;}
+#about .w-75 .box-img-about img{
+    width: 150px;
+    height: 150px;
+    padding-right: 1rem!important;
 }
 #collapseExample .card{
     background-color: transparent !important;
@@ -215,32 +188,35 @@ main #home .social-media a i:hover{
     padding: 0;
 }
 /* ================skills ============ */
-
-#skills  .row  i{ 
-    margin: 10px 0;
-}
+#skills  .row  i{   margin: 10px 0;}
 /*===============projects style section =================*/
 #big-projects {
-    background-color: whitesmoke;
+
     margin: 0!important;
 }
-.container-fluid p{
-    text-align: justify;
+#big-projects> div .project-one {
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+    transition: 0.4s ease all;
 }
+#big-projects> div .project-one:hover {
+    transform: perspective(800px) rotateY(-8deg)
+               translateY(-20px) rotateX(10deg) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.container-fluid p{text-align: justify;}
 /*=============== the style of other cool stuff in the section of project */
-#other .row >* {
-    padding: 0!important;
-}
+#other .row >* {   padding: 0!important;}
 #other  .card {  
     margin: 10px;
     width: 300px;
 }
-.card img{
-    height: 180px;
-}
-
-.card .card-body {
-    flex: 0 0 0;
+.card img{height: 180px;}
+.card .card-body {  flex: 0 0 0;}
+#services {
+    background-color: #1a595d80;
 }
 #services .container {
     text-align: center;
@@ -274,12 +250,11 @@ main #home .social-media a i:hover{
 .container form  textarea {    height: 150px;}
 /* ==== ==========================*/
 #contact .card-info {
-
     border-bottom: 4px solid #1D809F;
     height: 200px;
     border-radius: 4px;
     color: #000;
-    background-color: whitesmoke;
+    background-color: #cfcfcf;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +276,7 @@ main #home .social-media a i:hover{
 .footer {
     display: flex;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: #000800;
 }
 .footer .social-link {
     display: flex;

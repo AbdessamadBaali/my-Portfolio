@@ -4,36 +4,17 @@ nav .menu-btn,
 @media screen and (max-width:992px) {
 /*  responsive of navbar for max width 900px */
 header nav{
-	height: 65px;
 	position: absolute;
 	top: 55px;
 	left: 0%;
-	width: 50%;
-	padding: 0px;
-	margin: 0px; 
+	width: 55%;
 }
 header nav ul {
-	margin: 0;
-	display: none;
-	height: auto;
-	padding-left: 0;
+	display: none !important;
 }
-header nav ul li{
-	width : 100%;
-	margin-left: 0;
-	border-bottom: 1px solid #eee;
-}
-nav ul li a{
-	font-size: 25px;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0px;
-	padding: 15px;
-	height: 35px;
-}
-nav ul li a:hover{	background-color: rgba(245, 222, 179, 0.829);}
+header nav ul li{	border-bottom: 1px solid #eee;}
+header nav ul .nav-link{ padding: 1rem !important;}
+nav ul li a:hover{	background-color: rgba(245, 179, 141, 0.829);}
 nav .menu-icon{
 	display: block;
 	cursor:pointer;
@@ -45,7 +26,7 @@ nav .menu-icon{
 	top: -55px;
 }
 nav .menu-icon .nav-icon{
-	background-color: #40c6d8;
+	background-color: #fff;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -54,7 +35,7 @@ nav .menu-icon .nav-icon{
 }
 nav .menu-icon .nav-icon:before,
 nav .menu-icon .nav-icon:after{
-	background:#40c6d8;
+	background:#fff;
 	content: '';
 	display: block;
 	height: 100%;
@@ -74,18 +55,17 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
 	top : 0;
 }
 nav .menu-btn:checked ~ ul {
-	display: block;
-	background-color: #40c6d8;
+	display: block !important;
+	background-color: #00000080;
 }
-#about .w-75 {	width: 90% !important;}
-#about .content-about .box-img-about{	width: 0%;}
-#about .container .box-img-about img{  display: none;}
+#about .w-75  .box-img-about{	width: 0%;}
+#about .w-75  .box-img-about img{  display: none;}
 #big-projects .w-50 {	width: 100% !important;}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 
-#about .container::before {  width: 0vw;}
+#about .w-75::before {  width: 0vw;}
 #contact .w-50 {	width: 100% !important;}
 }
 @media(max-width : 576px){ 
@@ -94,15 +74,15 @@ nav .menu-btn:checked ~ ul {
 		-webkit-text-stroke: 0px  rgb(255, 255, 255);
 		text-shadow: none;
 	}
-	#home .waviy{	font-size: 20px !important;}
-	#home .fs-3 {	font-size: 18px !important;}
+	#home .waviy{	font-size: 18px !important;}
+	#home .fs-3 {	font-size: 16px !important;}
 	#home .fs-4, #home .fs-5 {
 		font-size: 14px !important;
 		margin: 0;
 	}
 	/* about section */
 	#about {padding: 0;}
-	#about .container {
+	#about .w-75 {
 		width: 100% !important;
 		border: none;
 		border-radius: 0;
