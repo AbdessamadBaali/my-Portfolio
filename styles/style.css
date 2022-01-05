@@ -174,23 +174,49 @@ main #home .social-media a i:hover{
 #big-projects {
     margin: 0!important;
 }
-#big-projects  .row > .project {
-    margin: 25px 0;
+#big-projects .all-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#big-projects  .all-project  > .project {
+    position: relative;
+    margin: 25px 10px;
+    width: calc((100% - 60px) / 3);
+    border-radius: 30px;
+    border: 1px solid #888;
+    padding: 0;
+    background-color: black;
+    height: 350px;
+    transition: 0.4s ease all;
 }
 #big-projects> div .project-one {
     width: 100%;
-    height: 350px;
-    border: 1px solid #00000049;
-    border-radius: 30px;
-    transition: 0.4s ease all;
+    height: 100%;
+    border-radius: 28px;
+    transition: 0.5s ease-in-out;
 }
-#big-projects> div .project-one:hover {
+
+ #big-projects  .all-project  > .project:hover  {
     transform: perspective(800px) rotateY(-8deg)
                translateY(-20px) rotateX(10deg) scale(1);
     filter: blur(0);
-    opacity: 1;
+}
+#big-projects> div .project-one:hover { opacity: .5;}
+#big-projects .all-project  > .project .into-project {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    transition: 0.4s ease-in-out;
+    visibility: hidden;
+}
+#big-projects .all-project  > .project:hover .into-project {
+    visibility: visible;
 }
 .container-fluid p{text-align: justify;}
+
 /*=============== the style of other cool stuff in the section of project */
 #other .row >* {   padding: 0!important;}
 #other  .card {  
@@ -243,7 +269,7 @@ main #home .social-media a i:hover{
     height: 200px;
     border-radius: 4px;
     color: #000;
-    background-color: #cfcfcf;
+    background-color: #cfcfcf2f;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,18 +293,16 @@ main #home .social-media a i:hover{
     justify-content: center;
     background-color: #000800;
     clip-path: polygon(24% 1%, 70% 6%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 11%);
-
+    padding: 1.5rem;
 }
 .footer .social-link {
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    height: 4rem;
-    width: 4rem; 
+    height: 3rem;
+    width: 3rem; 
     font-size: 1.5rem;
     background-color: #1D809F;
-    transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
 }

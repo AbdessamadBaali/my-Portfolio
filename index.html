@@ -47,9 +47,9 @@
                 <!-- <video src="videos/bgvideo.mp4" loop muted autoplay></video> -->
                 <div class="content-home">
                    <h2 class=" fs-3">welcome i'm Abdessamad</h2>
-                    <h1 class=" display-1 ">Front-end developer</h1>
+                    <h1 class=" display-2 ">Front-end developer</h1>
                     <q class="fw-lighter fs-4 text-center">Website without visitors is like a ship lost in the horizon</q>
-                    <a class="btn btn-outline-primary fs-5 text-uppercase mt-3" href="#">get started</a>
+                    <a class="btn btn-outline-primary fs-5 text-uppercase mt-3 fw-bold" href="#">get started</a>
                 </div>
                 <div class="social-media">
                     <a class="fs-2" target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -61,8 +61,8 @@
         <!--||||||||||| the about section ||||||||||-->
         <section id="about" >
             <div class="w-75 mx-auto row justify-content-between">
-                <div class="col-lg-10 col-md-12">
-                    <h2 class="h2">about me</h2>
+                <div class="col-lg-9 col-md-12">
+                    <h2 >about me</h2>
                     <p class="fw-lighter fs-6 text-dark"> 
                         Hi, i'm Abdessamad Baali. I'm a Front-end  developer. Specialize 
                         in Html5 css and javaScript  with decent knowledge in other technologie
@@ -71,7 +71,7 @@
                     </p>
                 </div>
                 <!-- this is the  box of the imag -->
-                <div class="box-img-about col-2">
+                <div class="box-img-about col-3">
                     <img class="" src="images/avataaars.svg" alt="">
                 </div>
                 <!-- this part is for read more -->
@@ -148,32 +148,50 @@
         </section>
         <!--||||||||||||| projects section |||||||||| --> 
         <section id="big-projects" class="container-fuild  p-3 text-center" >
-            <h2 class="h2">my projects</h2>
+            <h2 >my projects</h2>
             <h3 class="mb-3">a selection of my best projects.</h3>
-            <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 ">
+            <div class="all-project">
                 <!-- the first project -->
-                <div class="project">       
-                    <a href="https://omarkabiri2.netlify.app" target="_blanck">
-                        <img class="project-one shadow" src="images/projectOmar.png" alt="image of the project">
-                    </a>
+                <div class="project shadow">      
+                    <img class="project-one" src="images/projectOmar.png" alt="image of the project">
+                    <div class="into-project">
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="https://omarkabiri.netlify.app">vieu
+                        </a>
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="https://github.com/AbdessamadBaali/portfolioPoject"><i class="fab fa-github"></i>github
+                        </a>
+                    </div>
                 </div>
                 <!-- the second project -->
-                <div class="project">       
-                    <a href="">
-                        <img class="project-one shadow" src="images/zack.png" alt="">
-                    </a>
+                <div class="project shadow">       
+                    <img class="project-one " src="images/zack.png" alt="">
+                    <div class="into-project">
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="#">vieu
+                        </a>
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="#"><i class="fab fa-github"></i>github
+                        </a>
+                    </div>
                 </div>
                 <!-- the second project -->
-                <div class="project">       
-                    <a href="">
-                        <img class="project-one shadow" src="images/store.png" alt="">
-                    </a>
+                <div class="project shadow">       
+                    <img class="project-one " src="images/store.png" alt="">
+                    <div class="into-project">
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="#">vieu
+                        </a>
+                        <a      class="btn btn-outline-danger fw-bold" target="_blanck"
+                                href="https://github.com/AbdessamadBaali/stor-of-basketball"><i class="fab fa-github"></i>github
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!--|||||||||||||| other cool stuff section|||||||||||| -->
         <section id="other" class="container-fluid pb-5 ">  
-            <h2 class="h2 m-5">other cool stuff</h2>
+            <h2 class=" m-5">other cool stuff</h2>
             <div class="container-fluid">
                 <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 justify-content-center">                    <!-- card one -->
                     <div class="card shadow ">
@@ -230,7 +248,7 @@
         </section>
         <!--|||||||||||||||| services |||||||||||||| -->
         <section id="services" class="p-5">
-            <h2 class="h2 mb-5 text-center text-white ">what we offer</h2>
+            <h2 class="mb-5 text-center text-white ">what we offer</h2>
             <div class="row justify-content-around">
                 <div class="container col-md-4 col-sm-5  p-2 ">
                     <i class="fa fa-mobile-alt"></i>
@@ -251,7 +269,7 @@
         </section>
         <!-- |||||||||||||contact section |||||||||||||-->
         <section  class="container-fuild bg-white" id="contact" >
-            <h2 class="h2 m-5">Contact Us</h2>
+            <h2 class="m-5">Contact Us</h2>
             <div class="container w-50 m-auto" > 
                 <form id='form-contact' action="" method="get">
                     <label class="text-info" for="name">Name</label>
@@ -294,8 +312,8 @@
         </section>
         <!--|||||||||| footer section ||||||||||| -->
         <footer class="footer text-center ">
-            <div class="container m-4 px-4 px-lg-5">
-                <ul class="list-inline mb-5">
+            <div class="container">
+                <ul class="list-inline mb-3">
                     <li class="list-inline-item">
                         <a
                             class="social-link rounded-circle text-white mr-3" 
@@ -315,7 +333,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="text-muted  fs-6">Copyright © baaliDev 2021</p>
+                <p class="text-muted  fs-6">Copyright © baaliDev 2022</p>
             </div>
         </footer>
         <!-- java scripr link  -->
