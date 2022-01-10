@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth;}
 body {
     margin: 0;
     padding: 0;
@@ -9,9 +7,7 @@ body {
     background-color: #fff;  
     width: 100%;
 }
- 
 /* generation style */
-
 h2,h1,h3{
     text-transform: capitalize;
     color: rgb(41, 41, 41);
@@ -20,25 +16,21 @@ h2,h1,h3{
     padding: 0;
     font-weight: 700;
 }
-h3 {
-    font-weight: normal;
-}
-.btn {
-    box-shadow: none!important;
-
-}
-
+h3 {  font-weight: normal;}
+.btn {   box-shadow: none!important;}
 /* ============ header =============*/
- 
 header {
     background-color: #132028b4;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 1;
     width: 100%;
     height: 55px;   
+}
+header nav .nav:nth-last-child(1){
+    margin-right: 20px
 }
 .logo a {
     position: absolute;
@@ -63,7 +55,6 @@ header {
 @keyframes animate  {
     0%, 100% {
         clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%,100% 52%,100% 100%,0% 100%) ;
-
     }
     50% {
         clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%,100% 46%,100% 100%,0% 100%) ;
@@ -89,17 +80,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
- /* main #home video{
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-} */
 main #home .content-home {
     width: 100%;
     display: flex;
@@ -125,12 +105,10 @@ main #home .social-media{
     right: 2%;
 }
 main #home .social-media a i{
-    color: #000;
+    color: #eee;
     transition: ease-out .28s;
 }
-main #home .social-media a i:hover{
-    color: #fff;
-    transform: scale(1.3);
+main #home .social-media a i:hover{   transform: scale(1.3);
 }
 /*=================== style of about section ============ */
 #about {
@@ -188,7 +166,7 @@ main #home .social-media a i:hover{
     border-radius: 30px;
     border: 1px solid #888;
     padding: 0;
-    background-color: black;
+    background-color: #000000cc;
     height: 350px;
     transition: 0.4s ease all;
 }
@@ -198,13 +176,12 @@ main #home .social-media a i:hover{
     border-radius: 28px;
     transition: 0.5s ease-in-out;
 }
-
  #big-projects  .all-project  > .project:hover  {
     transform: perspective(800px) rotateY(-8deg)
                translateY(-20px) rotateX(10deg) scale(1);
     filter: blur(0);
 }
-#big-projects> div .project-one:hover { opacity: .5;}
+#big-projects> div .project-one:hover { opacity: .7;}
 #big-projects .all-project  > .project .into-project {
     position: absolute;
     bottom: 10%;
@@ -216,7 +193,6 @@ main #home .social-media a i:hover{
     visibility: visible;
 }
 .container-fluid p{text-align: justify;}
-
 /*=============== the style of other cool stuff in the section of project */
 #other .row >* {   padding: 0!important;}
 #other  .card {  
@@ -226,7 +202,6 @@ main #home .social-media a i:hover{
 .card img{height: 180px;}
 .card .card-body {  flex: 0 0 0;}
 #services {
-
     background: linear-gradient(13deg, 
     rgba(34,193,195,1) 0%,
     rgba(102,190,152,1) 36%,
@@ -246,7 +221,6 @@ main #home .social-media a i:hover{
     padding: 1.5rem;
     margin: 10px;
 }
-
 /*====================================contact============================*/
 .container form  label{
     font-size: 1.2rem;
@@ -260,6 +234,10 @@ main #home .social-media a i:hover{
     margin: 1rem 0;
     transition: ease-in-out .25s;
     color: #000;
+    letter-spacing: 1px;
+}
+[id="msg"] {
+    border-radius: 15px !important
 }
 .container form > input:hover, .container form  textarea:hover  {   background-color: #1d819f9a;}
 .container form  textarea {    height: 150px;}
