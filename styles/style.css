@@ -148,6 +148,10 @@ main #home .social-media a i:hover{   transform: scale(1.3);
 }
 /* ================skills ============ */
 #skills  .row  i{   margin: 10px 0;}
+.progress {
+    height: 20px;
+    font-size: 14px;
+}
 /*===============projects style section =================*/
 #big-projects {
     margin: 0!important;
@@ -247,7 +251,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     height: 200px;
     border-radius: 4px;
     color: #000;
-    background-color: #cfcfcf2f;
+    background-color: #e9ecef;
     display: flex;
     flex-direction: column;
     justify-content: center;
