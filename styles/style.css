@@ -7,6 +7,7 @@ body {
     background-color: #fff;  
     width: 100%;
 }
+
 /* generation style */
 h2,h1,h3{
     text-transform: capitalize;
@@ -63,7 +64,7 @@ header nav .nav:nth-last-child(1){
 header nav { position: relative;}
 header nav ul li a{
     color: #fff !important;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 1px;
     transition: ease-in-out .3s;
@@ -73,29 +74,30 @@ header nav ul li a:hover{
 }
 /*===================== MAIN STYLE ===========*/
 main {
-    height: 95vh;
+    height: 110vh;
     width: 100%;
+    background-color: #000;
     position: relative;
-    background-image: url('../images/imagespexels-efrain-alonso-3584283.jpg');
+    background-image: url('../images/landing.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover; }
 main #home .content-home {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 30%;
 }
+
 .content-home h1,.content-home h2,.content-home q{
-    margin: 0;
     letter-spacing: 1.4px;
     color: #fff;
     -webkit-text-stroke: .2px  #000;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.884);
+    text-shadow: 0 2px 15px #000000ea;
 }
-.content-home h1{ color: #1D809F;}
+.content-home h1{ color: #43d3ff;}
 main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
     display: flex;
@@ -112,7 +114,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);
 }
 /*=================== style of about section ============ */
 #about {
-    height: auto;
+    min-height: 80vh;
     position: relative;
     padding: 2rem;
 }
@@ -141,16 +143,31 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     height: 150px;
     padding-right: 1rem!important;
 }
-#collapseExample .card{
+#readMore .card{
     background-color: transparent !important;
     border: none;
     padding: 0;
 }
 /* ================skills ============ */
 #skills  .row  i{   margin: 10px 0;}
+#skills {
+    background: linear-gradient(45deg, #131314 0%, #443158 15%);
+    background-image: url('/images/bg01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-dodge;
+    color: sandybrown;
+}
+#skills .row > div {
+    margin: 1rem 0;
+}
+
 .progress {
-    height: 20px;
+    height: 30px;
     font-size: 14px;
+    background-color: #fff !important;
+    border: 1px solid #d1d1d1;
 }
 /*===============projects style section =================*/
 #big-projects {
@@ -197,32 +214,39 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     visibility: visible;
 }
 .container-fluid p{text-align: justify;}
+/* work-together section */
+#work-together {
+    background: whitesmoke;
+}
 /*=============== the style of other cool stuff in the section of project */
 #other .row >* {   padding: 0!important;}
 #other  .card {  
     margin: 10px;
     width: 300px;
+    transition:  ease-in-out .2s;
+}
+#other  .card:hover {  
+    box-shadow: 0 4px 18px #1d1d1d9f !important;
 }
 .card img{height: 180px;}
 .card .card-body {  flex: 0 0 0;}
+/* service section style */
 #services {
-    background: linear-gradient(13deg, 
-    rgba(34,193,195,1) 0%,
-    rgba(102,190,152,1) 36%,
-    rgb(147, 181, 197) 100%
-      );
-}
+    background-image: url("../images/design-features.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 #services .container {
     text-align: center;
-    color: #000;
+    color: #fff;
     text-transform: capitalize;
 }
 #services .container i{
     color: rgb(3, 126, 197);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 50%;
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 25px;
     margin: 10px;
 }
 /*====================================contact============================*/
@@ -271,9 +295,11 @@ main #home .social-media a i:hover{   transform: scale(1.3);
 .footer {
     display: flex;
     justify-content: center;
-    background-color: #000800;
+    background:#1d1d1d;
+    background-size: cover;
     clip-path: polygon(24% 1%, 70% 6%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 11%);
     padding: 1.5rem;
+    color: #fff ;
 }
 .footer .social-link {
     display: flex;
@@ -285,4 +311,8 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     font-size: 1.5rem;
     background-color: #1D809F;
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.footer .container p {
+    font-size: 18px !important;
+    letter-spacing: 2px;
 }
