@@ -64,6 +64,9 @@ main {
 #skills .w-50 {
 	width: 90% !important;
 }
+#about {
+	min-height: auto;
+}
 #about .w-75  .box-img-about{	width: 0%;}
 #about .w-75  .box-img-about img{  display: none;}
 #big-projects .w-50 {	width: 100% !important;}

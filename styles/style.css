@@ -156,11 +156,15 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-blend-mode: color-dodge;
-    color: sandybrown;
+    background-blend-mode: darken;
 }
 #skills .row > div {
     margin: 1rem 0;
+}
+#skills .row > div i ,span{
+    color: #f89538;
+    -webkit-text-stroke: .3px #000000;
+    text-shadow: 1px 1px  10px rgb(0, 0, 0);
 }
 
 .progress {
