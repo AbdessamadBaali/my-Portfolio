@@ -78,7 +78,7 @@ main {
     width: 100%;
     background-color: #000;
     position: relative;
-    background-image: url('../images/landing.jpg');
+    background-image: url('../images/landing-min.jpg');
     background-repeat: no-repeat;
     background-size: cover; }
 main #home .content-home {
@@ -232,7 +232,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);
 .card .card-body {  flex: 0 0 0;}
 /* service section style */
 #services {
-    background-image: url("../images/design-features.jpg");
+    background-image: url("../images/design-features-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     }
