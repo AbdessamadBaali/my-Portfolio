@@ -14,7 +14,6 @@ header nav ul {
 }
 header nav ul li{	border-bottom: 1px solid #eee;}
 header nav ul .nav-link{ padding: 1rem !important;}
-nav ul li a:hover{	background-color: rgba(245, 179, 141, 0.829);}
 nav .menu-icon{
 	display: block;
 	cursor:pointer;
