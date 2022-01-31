@@ -68,8 +68,9 @@ main {
 }
 #about .w-75  .box-img-about{	width: 0%;}
 #about .w-75  .box-img-about img{  display: none;}
-#big-projects .w-50 {	width: 100% !important;}
-#big-projects  .all-project  > .project { width: calc((100% - 60px) / 2);}
+
+#big-projects  .all-project  > .project,
+#vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
@@ -78,7 +79,8 @@ main {
 	}
 #about .w-75::before {  width: 0vw;}
 #contact .w-50 {	width: 100% !important;}
-#big-projects  .all-project  > .project { width: 80%}
+#big-projects  .all-project  > .project,
+#vedio-projects .all-vedio > .project { width: 80%}
 }
 @media(max-width : 576px){ 
 	main {
@@ -105,6 +107,7 @@ main {
 		box-shadow: none;
 	}
 	/* project section */
+	#vedio-projects,
 	#big-projects {	padding: 0 ;}
 	#skills .w-50 {
 		width: 100% !important;
