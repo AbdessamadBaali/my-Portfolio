@@ -21,7 +21,7 @@ h3 {  font-weight: normal;}
 .btn {   box-shadow: none!important;}
 /* ============ header =============*/
 header {
-    background-color: #1d1d1d;
+    background-color: #21312e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,10 +47,10 @@ header nav .nav:nth-last-child(1){
 }
 .logo a:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: .8px #f89538;
+    -webkit-text-stroke: .8px #e9ecef;
 }
 .logo a:nth-child(2){
-    color: #f89538;
+    color: #e9ecef;
     animation: animate 3s ease-in-out infinite;
 }
 @keyframes animate  {
@@ -70,7 +70,7 @@ header nav ul li a{
     transition: ease-in-out .3s;
 }
 header nav ul li a:hover{
-    color: #f89538!important;
+    color: #e9ecef!important;
 }
 /*===================== MAIN STYLE ===========*/
 main {
@@ -78,7 +78,8 @@ main {
     width: 100%;
     background-color: #000;
     position: relative;
-    background-image: url('../images/bgHome.png');
+    background-image: url('../images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg');
+    backdrop-filter: unset;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
@@ -95,12 +96,17 @@ main #home .content-home {
 
 .content-home h1,.content-home h2,.content-home q{
     letter-spacing: 1.4px;
-    color: #fff;
+    color: #e9ecef;
     -webkit-text-stroke: .2px  #000000;
     text-shadow: 0 2px 15px #000000;
     font-weight: 600;
 }
-.content-home h1{ color: #f89538;}
+.content-home h1{ 
+    color: #a6dafd;
+    text-shadow: 1px 1px 6px;
+    -webkit-text-stroke: 1px  #000000;
+
+}
 main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
     display: flex;
@@ -110,7 +116,7 @@ main #home .social-media{
     right: 2%;
 }
 main #home .social-media a i{
-    color: #000;
+    color: #e9ecef;
     transition: ease-out .28s;
 }
 main #home .social-media a i:hover{   transform: scale(1.3);
