@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/responsive.css">
         <link rel="stylesheet" href="styles/fontawesome-free-6.0.0-beta2-web/css/all.css">
-      
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body> 
         <!--|||||||||| the header part of my portfolio ||||||||||||-->
@@ -45,7 +45,7 @@
         <main>
             <div id="home">
                 <!-- <video src="videos/bgvideo.mp4" loop muted autoplay></video> -->
-                <div class="content-home">
+                <div data-aos="fade-right" class="content-home">
                    <h2 class=" fs-3">welcome i'm Abdessamad</h2>
                     <h1 class=" display-4 ">Front-end developer</h1>
                     <q class="fw-lighter fs-4 text-center">Website without visitors is like a ship lost in the horizon</q>
@@ -60,8 +60,8 @@
         </main>
         <!-- the about section ||||||||-->
         <section id="about" >
-            <div class="w-75 mx-auto row justify-content-between">
-                <div class="col-lg-9 col-md-12">
+            <div data-aos="fade-right" class="w-75 mx-auto row justify-content-between">
+                <div  class="col-lg-9 col-md-12">
                     <h2 >about me</h2>
                     <p class="fw-lighter"> 
                         Hi, i'm Abdessamad Baali. I'm a Front-end developer, with decent knowledge in other technologie in the 
@@ -147,7 +147,7 @@
             <h3 class="mb-3">a selection of my  projects.</h3>
             <div class="all-project">
                 <!-- the first project -->
-                <div class="project shadow">      
+                <div data-aos="zoom-in" class="project shadow">      
                     <img class="project-one" src="images/projects/projectOmar-min.png" alt="image of the project">
                     <div class="into-project">
                         <a      class="btn btn-outline-danger fw-bold" target="_blank"
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <!-- the second project -->
-                <div class="project shadow">       
+                <div data-aos="zoom-in" class="project shadow">       
                     <img class="project-one " src="images/projects/Capture d’écran 2022-01-31 101022.png" alt="">
                     <div class="into-project">
                         <a      class="btn btn-outline-danger fw-bold" target="_blank"
@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <!-- the second project -->
-                <div class="project shadow">       
+                <div data-aos="zoom-in" class="project shadow">       
                     <img class="project-one " src="images/projects/Capture d’écran 2022-01-31 192627.png" alt="">
                     <div class="into-project">
                         <a      class="btn btn-outline-danger fw-bold" target="_blank"
@@ -189,13 +189,13 @@
             <h2 >Some videos of my projects</h2>
             <h3 class="mb-3">A selection of videos representing my projects.</h3>
             <div class="all-vedio">
-                <div class="project">
+                <div data-aos="fade-down" class="project">
                     <video class="project-one " controls   src="videos/v2.mp4">
                 </div>
-                <div class="project">
+                <div data-aos="fade-up" class="project">
                     <video class="project-one " controls   src="videos/V6-1.mp4">
                 </div>
-                <div class="project">
+                <div data-aos="fade-down" class="project">
                     <video class="project-one " controls   src="videos/v3.mp4">
                 </div>   
             </div>
@@ -211,7 +211,7 @@
             <h2 class=" m-5">other cool stuff</h2>
             <div class="container-fluid">
                 <div class="row row-cols-sm-2 row-cols-md-2 row-cols-xl-3 justify-content-center">                    <!-- card one -->
-                    <div class="card shadow ">
+                    <div data-aos="zoom-in-right"  data-aos-duration="150" class="card shadow ">
                         <img src="images/otherCoolStuff/jsDocumentation-min.png" class="img-fuild " alt="photo of the projoct javaScripit">
                         <div class="card-body">
                           <h5 >js documentation</h5>
@@ -221,7 +221,7 @@
                         </div>
                       </div>
                     <!-- card two -->
-                    <div class="card shadow ">
+                    <div data-aos="zoom-in-right" class="card shadow ">
                         <img src="/images/otherCoolStuff/billGates-min.png" class="card-img-top" alt="photo of the projoct documentation of bill billGates">
                         <div class="card-body">
                           <h5 >bill Gates documentation</h5>
@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <!-- card three -->
-                    <div class="card shadow ">
+                    <div data-aos="zoom-in"  class="card shadow ">
                         <img src="/images/otherCoolStuff/form-min.png"  class="card-img-top"alt="photo of the projoct documentation of bill billGates">
                         <div class="card-body">
                           <h5 >inprove the platform</h5>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
     
-                    <div class="card shadow " >
+                    <div data-aos="zoom-in-left" class="card shadow " >
                         <img src="/images/otherCoolStuff/blackJack-min.png" class="card-img-top" alt="photo of the project game blackJack">
                         <div class="card-body">
                           <h5 >black Jack game</h5>
@@ -251,7 +251,7 @@
                         </div>
                     </div>
     
-                    <div class="card shadow " >
+                    <div data-aos="zoom-in-left" class="card shadow " >
                         <img src="/images/otherCoolStuff/changeBackgound-min.png" class="card-img-top" alt="photo of the projoct store of basketball">
                         <div class="card-body">
                           <h5 >change background color</h5>
@@ -263,7 +263,7 @@
                         </div>
                     </div>
     
-                    <div class="card shadow " >
+                    <div data-aos="zoom-in-right" class="card shadow " >
                         <img src="/images/otherCoolStuff/toDoList-min.png" class="card-img-top" alt="photo of the projoct to do list">
                         <div class="card-body">
                           <h5 >stuff that I need to do</h5>
@@ -282,20 +282,20 @@
         <section id="services" class="p-5">
             <h2 class="mb-5 text-center text-white ">what we offer</h2>
             <div class="row justify-content-around">
-                <div class="container col-md-4 col-sm-5  p-2 ">
+                <div data-aos="flip-left" class="container col-md-4 col-sm-5  p-2 ">
                     <i class="fa fa-mobile-alt"></i>
-                <h4>Designe </h4>
-                <p>Looks great on any screnn size!</p>
+                    <h4>Designe </h4>
+                    <p>Looks great on any screnn size!</p>
                 </div>
-                <div class="container col-md-4 col-sm-5 p-2 ">
+                <div data-aos="flip-up" class="container col-md-4 col-sm-5 p-2 ">
                     <i class="fa fa-pen"></i>
-                <h4>Redisigned</h4>
-                <p>Freshlt redisigned for you !</p>
+                    <h4>Redisigned</h4>
+                    <p>Freshlt redisigned for you !</p>
                 </div>
-                <div class="container col-md-4 col-sm-5 p-2 ">
+                <div data-aos="flip-right" class="container col-md-4 col-sm-5 p-2 ">
                     <i class="fa fa-microphone"></i>
-                <h4>create your web site</h4>
-                <p>Create A Personnelle Web For You Bessnise!</p>
+                    <h4>create your web site</h4>
+                    <p>Create A Personnelle Web For You Bessnise!</p>
                 </div> 
             </div>
         </section>
@@ -325,19 +325,19 @@
             </div> 
             <div class=" container-fluid my-4 bg-white row mx-auto
                          row-cols-lg-4   row-cols-md-3 row-cols-sm-2 justify-content-center">
-                <div class="card-info m-2">
+                <div data-aos="flip-left" class="card-info m-2">
                     <i class="fa fa-map-marked fs-2"></i>
                     <p>address</p>
                     <span class="hr text-muted"></span>
                     <p class="text-muted">Lot Ain Aghbal Ahadaf Azrou</p>
                 </div>
-                <div class="card-info m-2">
+                <div data-aos="flip-up" class="card-info m-2">
                     <i class="fa fa-envelope fs-2"></i>
                     <p>email</p>
                     <span class="hr text-muted"></span>
                    <p class="text-muted">baaliabdessamad3@gmail.com</p>
                 </div>
-                <div class="card-info m-2">
+                <div data-aos="flip-right" class="card-info m-2">
                     <i class="fa fa-phone fs-2"></i>
                     <p>phone</p>
                     <span class="hr text-muted"></span>
@@ -382,6 +382,7 @@
             </div>
         </footer>
         <!-- java scripr link  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/javaScripit/script.js"></script>
         <script src="styles/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     </body>
