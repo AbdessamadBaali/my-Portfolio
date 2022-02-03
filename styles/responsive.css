@@ -9,9 +9,7 @@ header nav{
 	left: 0%;
 	width: 55%;
 }
-header nav ul {
-	display: none !important;
-}
+header nav ul {display: none !important;}
 header nav ul li{	border-bottom: 1px solid #eee;}
 header nav ul .nav-link{ padding: 1rem !important;}
 nav .menu-icon{
@@ -57,35 +55,24 @@ nav .menu-btn:checked ~ ul {
 	display: block !important;
 	background-color: #00000080;
 }
-main {
-    height: 100vh;
-}
-#skills .w-50 {
-	width: 90% !important;
-}
-#about {
-	min-height: auto;
-}
+main { height: 100vh;}
+#skills .w-50 {width: 90% !important;}
+#about {min-height: auto;}
 #about .w-75  .box-img-about{	width: 0%;}
 #about .w-75  .box-img-about img{  display: none;}
-
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
-	main {
-		height: 95vh;
-	}
+	main {height: 95vh;}
 #about .w-75::before {  width: 0vw;}
 #contact .w-50 {	width: 100% !important;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: 80%}
 }
 @media(max-width : 576px){ 
-	main {
-		height: 90vh;
-	}
+	main {height: 90vh;}
 	/* home section */
 	.content-home h2,.content-home q{
 		-webkit-text-stroke: 0px  rgb(255, 255, 255);
@@ -109,10 +96,6 @@ main {
 	/* project section */
 	#vedio-projects,
 	#big-projects {	padding: 0 ;}
-	#skills .w-50 {
-		width: 100% !important;
-	}
-	#other .shadow {
-		box-shadow: none !important;
-	}
+	#skills .w-50 {	width: 100% !important;}
+	#other .shadow {	box-shadow: none !important	}
 }

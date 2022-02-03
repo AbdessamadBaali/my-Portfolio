@@ -105,7 +105,6 @@ main #home .content-home {
     color: #a6dafd;
     text-shadow: 1px 1px 6px;
     -webkit-text-stroke: 1px  #000000;
-
 }
 main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
@@ -119,8 +118,7 @@ main #home .social-media a i{
     color: #e9ecef;
     transition: ease-out .28s;
 }
-main #home .social-media a i:hover{   transform: scale(1.3);
-}
+main #home .social-media a i:hover{   transform: scale(1.3);}
 /*=================== style of about section ============ */
 #about {
     min-height: 80vh;
@@ -167,15 +165,12 @@ main #home .social-media a i:hover{   transform: scale(1.3);
     background-position: center;
     background-blend-mode: darken;
 }
-#skills .row > div {
-    margin: 1rem 0;
-}
+#skills .row > div {  margin: 1rem 0;}
 #skills .row > div i ,span{
     color: #f89538;
     -webkit-text-stroke: .3px #000000;
     text-shadow: 1px 1px  10px rgb(0, 0, 0);
 }
-
 .progress {
     height: 25px;
     font-size: 14px;
