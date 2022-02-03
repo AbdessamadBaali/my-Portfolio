@@ -78,7 +78,7 @@ main {
     width: 100%;
     background-color: #000;
     position: relative;
-    background-image: url('../images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg');
+    background-image: url('../images/bg/bg-min.jpg');
     backdrop-filter: unset;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -319,7 +319,6 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     background:#1d1d1d;
     background-size: cover;
     /* clip-path: polygon(24% 1%, 70% 6%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 11%); */
-
     color: #fff ;
 }
 .footer .social-link {
