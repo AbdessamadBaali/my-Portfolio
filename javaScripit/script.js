@@ -1,4 +1,3 @@
-AOS.init();
 // read more btn script
 let changeReadMore = document.querySelector("#read-more-btn")
 function readMoreScript() {

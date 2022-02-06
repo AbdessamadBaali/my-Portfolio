@@ -35,7 +35,7 @@ header nav .nav:nth-last-child(1){
 }
 .logo a {
     position: absolute;
-    top: 0px;
+    top: -20px;
     left: 20px;
     color: #fff;
     font-size: 2em;
