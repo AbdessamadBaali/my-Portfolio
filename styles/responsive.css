@@ -58,15 +58,15 @@ nav .menu-btn:checked ~ ul {
 main { height: 100vh;}
 #skills .w-50 {width: 90% !important;}
 #about {min-height: auto;}
-#about .w-75  .box-img-about{	width: 0%;}
-#about .w-75  .box-img-about img{  display: none;}
+#about>div .box-img-about{	width: 0%;}
+#about>div .box-img-about img{  display: none;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
-#about .w-75::before {  width: 0vw;}
+#about >div::before {  width: 0vw;}
 #contact .w-50 {	width: 100% !important;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: 80%}
@@ -86,7 +86,7 @@ main { height: 100vh;}
 	}
 	/* about section */
 	#about {padding: 0;}
-	#about .w-75 {
+	#about >div {
 		width: 100% !important;
 		border: none;
 		border-radius: 0;
