@@ -31,7 +31,7 @@
                 <label class="menu-icon" for="menu-btn">
                     <span class="nav-icon"></span>
                 </label>
-                <ul class="nav">
+                <ul  data-aos="fade-left" class="nav">
                     <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#about">about me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
@@ -50,7 +50,7 @@
                     <h1 class=" display-4 ">Front-end developer</h1>
                     <q class="fw-lighter fs-4 text-center">Website without visitors is like a ship lost in the horizon</q>
                 </div>
-                <div class="social-media">
+                <div data-aos="fade-left" class="social-media">
                     <a class="fs-2" target="_blank"  href="https://github.com/AbdessamadBaali"><i class="fab fa-github" aria-hidden="true"></i></a>
                     <a class="fs-2" target="_blank" href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     <a class="fs-2" target="_blank" href="https://twitter.com/CodeBaali"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -91,7 +91,7 @@
                 <!-- btn onclick display span of read more -->
                 <p>  
                     <a id="read-more-btn" onclick="readMoreScript()" 
-                        class="btn btn-outline-warning" 
+                        class="btn btn-warning" 
                         data-bs-toggle="collapse" href="#readMore">
                         Read More...
                     </a>
@@ -103,40 +103,40 @@
             <h2 class="text-white">skills</h2>
             <h3 class="h4 p-4 text-white">programming languages & tools</h3>
             <div class="row row-cols-md-2 justify-content-center ">
-                <div>
+                <div data-aos="flip-right">
                     <i class="fab fa-html5 fs-3 "></i> <span class="fs-2">html5</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated bg-success" style="width: 95%">95%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 95%">95%</div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="flip-left">
                     <i class="fab fa-css3 fs-3"></i>  <span class="fs-2">css3</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated " style="width: 90%">90%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 90%">90%</div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="flip-right">
                     <i class="fab fa-js fs-3 "></i>  <span class="fs-2">javaScripit</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated bg-warning" style="width: 55%">55%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 70%">70%</div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="flip-left">
                     <i class="fab fa-bootstrap fs-3"></i> <span class="fs-2">bootstrap</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated bg-info" style="width: 90%">90%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 90%">90%</div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="flip-right">
                     <i class="fab fa-python fs-3 "></i><span class="fs-2">python</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated bg-danger" style="width: 55%">55%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 65%">65%</div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="flip-left">
                     <i class="fab fa-wordpress fs-3 "></i><span class="fs-2">wordpress</span>
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-animated bg-primary" style="width: 55%">55%</div>
+                        <div class="progress-bar  progress-bar-animated bg-dark" style="width: 75%">75%</div>
                     </div>
                 </div>
             </div>
@@ -303,23 +303,23 @@
         <section  class="container-fuild bg-white" id="contact" >
             <h2 class="m-5">Contact Us</h2>
             <div class="container w-50 m-auto" > 
-                <form id='form-contact' action="" method="get">
-                    <label class="text-info" for="name">User name</label>
-                    <input  class="btn btn-outline-primary w-100 rounded-pill" id="name" type="text" name="name" placeholder="Full Name" required
+                <form data-aos="zoom-in" id='form-contact' action="" method="get">
+                    <label  for="name">User name</label>
+                    <input  class="btn btn-outline-dark w-100 rounded-pill" id="name" type="text" name="name" placeholder="Full Name" required
                     minlength="8"  maxlength="20">
 
-                    <label class="text-info" for="mail">Email</label>
-                    <input class="btn btn-outline-primary w-100 rounded-pill" id="mail" type="email" name="mail" placeholder="Email" required>
+                    <label  for="mail">Email</label>
+                    <input class="btn btn-outline-dark w-100 rounded-pill" id="mail" type="email" name="mail" placeholder="Email" required>
 
-                    <label class="text-info" for="phone">Phone</label>
-                    <input class="btn btn-outline-primary w-100 rounded-pill" id="phone" type="tel" name="phone" placeholder="phone" required>
+                    <label  for="phone">Phone</label>
+                    <input class="btn btn-outline-dark w-100 rounded-pill" id="phone" type="tel" name="phone" placeholder="phone" required>
 
-                    <label class="text-info" for="msg">Your Message</label>
-                    <textarea  class="btn btn-outline-primary w-100"id="msg" name="msg" placeholder="Write Your Message Here" required > </textarea>
+                    <label  for="msg">Your Message</label>
+                    <textarea  class="btn btn-outline-dark w-100"id="msg" name="msg" placeholder="Write Your Message Here" required > </textarea>
                     <br>
                     <div class="btn-group">
-                        <input class="btn btn-outline-primary" type="submit" value="send" >
-                        <input class="btn btn-outline-primary" type="reset" value="reset" >    
+                        <input class="btn btn-outline-dark" type="submit" value="send" >
+                        <input class="btn btn-outline-dark" type="reset" value="reset" >    
                     </div>
                 </form>
             </div> 
@@ -346,37 +346,37 @@
             </div> 
         </section>
         <!-- footer section ||||||| -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1d1d1d" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,256C480,267,600,277,720,250.7C840,224,960,160,1080,149.3C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#21312e" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,256C480,267,600,277,720,250.7C840,224,960,160,1080,149.3C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
         </svg>
         <footer class="footer text-center ">
             <div class="container">
                 <ul class="list-inline mb-3">
                     <li class="list-inline-item">
                         <a
-                            class="social-link rounded-circle text-white mr-3"  target="_blank"
+                            class="social-link rounded-circle text-white mr-3 bg-black"  target="_blank"
                             href="https://github.com/AbdessamadBaali">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white lg" target="_blank"
+                        <a class="social-link rounded-circle text-white bg-primary" target="_blank"
                          href="https://twitter.com/CodeBaali"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
                         <a 
-                            class="social-link rounded-circle text-white" target="_blank"
-                            href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/">
-                            <i class="fab fa-linkedin"></i>
+                            class="social-link rounded-circle text-white bg-danger"
+                            target="_blank" href="https://www.instagram.com/abdessamad.baali/">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a 
-                            class="social-link rounded-circle text-white"
-                            target="_blank" href="https://www.instagram.com/abdessamad.baali/">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            class="social-link rounded-circle text-white  bg-primary" target="_blank"
+                            href="https://www.linkedin.com/in/abdessamad-baali-9a09b91ab/">
+                            <i class="fab fa-linkedin"></i>
                         </a>
-
                     </li>
+
                 </ul>
                 <p >Copyright © baaliDev 2022</p>
             </div>

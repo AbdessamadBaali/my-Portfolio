@@ -76,7 +76,7 @@ header nav ul li a:hover{
 main {
     height: 110vh;
     width: 100%;
-    background-color: #000;
+    background-color: #21312e;
     position: relative;
     background-image: url('../images/bg/bg-min.jpg');
     backdrop-filter: unset;
@@ -97,14 +97,14 @@ main #home .content-home {
 .content-home h1,.content-home h2,.content-home q{
     letter-spacing: 1.4px;
     color: #e9ecef;
-    -webkit-text-stroke: .2px  #000000;
-    text-shadow: 0 2px 15px #000000;
+    -webkit-text-stroke: .2px  #21312e;
+    text-shadow: 0 2px 15px #21312e;
     font-weight: 600;
 }
 .content-home h1{ 
     color: #a6dafd;
     text-shadow: 1px 1px 6px;
-    -webkit-text-stroke: 1px  #000000;
+    -webkit-text-stroke: 1px  #21312e;
 }
 main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
@@ -126,7 +126,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     padding: 2rem;
 }
 #about .w-75 {
-    box-shadow: 0px 2px 30px 0 #858585ce;
+    box-shadow: 0px 2px 30px 0 #21312e67;
     padding: 1.5rem;
     border-radius: 4px;
     display: flex;
@@ -136,12 +136,12 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     width: 16vw;
     height: 16vw;
     background: linear-gradient( 120deg, rgba(243, 243, 243, 0.829), #2d8eb886);
-    box-shadow: 0px 16px 40px #00000025;
+    box-shadow: 0px 16px 40px #21312e67;
     border-radius: 50%;
     position: absolute;
     top: 150px;
-    left: 80px;
-    z-index: -1;
+    left: -100px;
+    z-index: -2;
     -webkit-border-radius: 50%;
 }
 #about .w-75 .container-fluid p{   text-align: justify;}
@@ -165,12 +165,11 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     background-position: center;
     background-blend-mode: darken;
 }
-#skills .row > div {  margin: 1rem 0;}
-#skills .row > div i ,span{
-    color: #f89538;
-    -webkit-text-stroke: .3px #000000;
-    text-shadow: 1px 1px  10px rgb(0, 0, 0);
+
+#skills .row > div {  margin: 1rem 0; 
+    box-sizing: border-box;
 }
+#skills .row > div i ,span{ color: #f89538;}
 .progress {
     height: 25px;
     font-size: 14px;
@@ -236,7 +235,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
 .container-fluid p{text-align: justify;}
 /* work-together section */
 #work-together {
-    background: whitesmoke;
+    background: #e9ecef;
     padding: 3ch;
 }
 /*=============== the style of other cool stuff in the section of project */
@@ -316,7 +315,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
 .footer {
     display: flex;
     justify-content: center;
-    background:#1d1d1d;
+    background:#21312e;
     background-size: cover;
     /* clip-path: polygon(24% 1%, 70% 6%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 11%); */
     color: #fff ;
@@ -329,10 +328,11 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     height: 3rem;
     width: 3rem; 
     font-size: 1.5rem;
-    background-color: #1D809F;
-    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.footer .social-link > i:nth-of-type(3){
+    background-color: #3f729b !important;
 }
 .footer .container p {
-    font-size: 18px !important;
+    font-size: 1.2em !important;
     letter-spacing: 2px;
 }
