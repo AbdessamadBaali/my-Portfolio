@@ -298,9 +298,9 @@
         <section  class="container-fuild bg-white" id="contact" >
             <h2 class="m-5">Contact Us</h2>
             <div class="container w-50 m-auto" > 
-                <form data-aos="zoom-in" id='form-contact' action="" method="get">
+                <form onsubmit="sendEmail();" data-aos="zoom-in" id='form-contact' action="" method="get">
                     <label  for="name">User name</label>
-                    <input  class="btn btn-outline-dark w-100 rounded-pill" id="name" type="text" name="name" placeholder="Full Name" required
+                    <input  class="btn btn-outline-dark w-100 rounded-pill" id="name" type="text" name="user" placeholder="Full Name" required
                     minlength="8"  maxlength="20">
 
                     <label  for="mail">Email</label>
