@@ -60,16 +60,16 @@ main { height: 100vh;}
 #about {min-height: auto;}
 #about>div .box-img-about{	width: 0%;}
 #about>div .box-img-about img{  display: none;}
+#about >div::before {  width: 0vw;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
-#about >div::before {  width: 0vw;}
-#contact .w-50 {	width: 100% !important;}
-#big-projects  .all-project  > .project,
-#vedio-projects .all-vedio > .project { width: 80%}
+	#contact .w-50 {	width: 100% !important;}
+	#big-projects  .all-project  > .project,
+	#vedio-projects .all-vedio > .project { width: 80%}
 }
 @media(max-width : 576px){ 
 	main {height: 90vh;}
