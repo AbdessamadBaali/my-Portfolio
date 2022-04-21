@@ -71,7 +71,7 @@ header nav ul li a{
     transition: ease-in-out .3s;
 }
 header nav ul li a:hover{
-    color: #f39428!important;
+    color: #08fdd8!important;
 }
 /*===================== MAIN STYLE ===========*/
 main {
@@ -103,7 +103,7 @@ main #home .content-home {
     font-weight: 600;
 }
 .content-home h1{ 
-    color: #a6dafd;
+    color: #08fdd8;
     text-shadow: 1px 1px 6px;
     -webkit-text-stroke: 1px  #21312e;
 }
@@ -175,7 +175,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
 #skills .row > div {  margin: 1rem 0; 
     box-sizing: border-box;
 }
-#skills .row > div i ,span{ color: #f89538;}
+#skills .row > div i ,span{ color: #08fdd8;}
 .progress {
     height: 20px;
     margin-bottom: 15px;
