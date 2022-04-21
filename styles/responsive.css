@@ -56,7 +56,7 @@ nav .menu-btn:checked ~ ul {
 	background-color: #00000080;
 }
 main { height: 100vh;}
-#skills .w-50 {width: 90% !important;}
+#skills {    padding: 3rem;}
 #about {min-height: auto;}
 #about>div .box-img-about{	width: 0%;}
 #about>div .box-img-about img{  display: none;}
@@ -67,6 +67,7 @@ main { height: 100vh;}
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
+	#skills {    padding: 2rem;}
 	#contact .w-50 {	width: 100% !important;}
 	#big-projects  .all-project  > .project,
 	#vedio-projects .all-vedio > .project { width: 80%}

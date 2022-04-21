@@ -170,6 +170,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
+    padding: 5rem;
 }
 
 #skills .row > div {  margin: 1rem 0; 
