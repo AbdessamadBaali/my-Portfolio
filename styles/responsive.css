@@ -63,9 +63,7 @@ main { height: 100vh;}
 #about >div::before {  width: 0vw;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
-#contact #contact-paragraph {
-    font-size: 1.1em;
-}
+#contact #contact-paragraph { font-size: 1.05em;}
 #contact > .container-from-card {
 	margin: auto;
 	display: flex;
@@ -135,4 +133,6 @@ main { height: 100vh;}
 	#big-projects {	padding: 0 ;}
 	#skills .w-50 {	width: 100% !important;}
 	#other .shadow {	box-shadow: none !important	}
+
+	#contact .container-card .card-info {	width: 300px;}
 }

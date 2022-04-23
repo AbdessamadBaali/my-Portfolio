@@ -325,7 +325,6 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     width: 50%;
 }
 #contact #contact-paragraph {
-    min-width: 400px;
     font-size: 1.2em;
     line-height: 2.3rem;
     word-wrap: break-word;
@@ -336,6 +335,10 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     letter-spacing: 2px;
     display: block;
 }
+.container-fuild form > .btn-group input {
+    border: 1px solid #1D809F !important;
+    color: #1D809F !important;
+}
 .container-fuild form > input, .container-fuild form  textarea  {
     width: 100%;
     text-align: start;
@@ -344,7 +347,7 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     margin: 1rem 0;
     transition: ease-in-out .25s;
     color: whitesmoke;
-    border: 1px solid #1D809F;
+    border: 1px solid #1D809F ;
     letter-spacing: 1.2px;
 }
 [id="msg"] {border-radius: 15px !important}
