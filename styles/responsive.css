@@ -63,14 +63,50 @@ main { height: 100vh;}
 #about >div::before {  width: 0vw;}
 #big-projects  .all-project  > .project,
 #vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
+#contact #contact-paragraph {
+    font-size: 1.1em;
+}
+#contact > .container-from-card {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.container-fuild form  {
+	width: 100%;
+}
+#contact .container-card {
+	width: 100%;
+}
+#contact .container-card .card-info {
+	height: 200px;
+	width: 400px;
+	margin: 15px 0;
+}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
 	#skills {    padding: 2rem;}
-	#contact .w-50 {	width: 100% !important;}
 	#big-projects  .all-project  > .project,
 	#vedio-projects .all-vedio > .project { width: 80%}
+
+	#contact > .container-from-card {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.container-fuild form  {
+		width: 100%;
+	}
+	#contact .container-card {
+		width: 100%;
+	}
+	#contact .container-card .card-info {
+		height: 200px;
+		width: 400px;
+		margin: 15px 0;
+	}
+
 }
 @media(max-width : 576px){ 
 	main {height: 90vh;}
