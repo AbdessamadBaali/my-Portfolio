@@ -83,8 +83,7 @@ main { height: 100vh;}
 @media(max-width : 768px){
 	main {height: 95vh;}
 	#skills {    padding: 2rem;}
-	#big-projects  .all-project  > .project,
-	#vedio-projects .all-vedio > .project { width: 80%}
+	#big-projects  .all-project  > .project { width: 40%;}
 
 	#contact > .container-from-card {
 		margin: auto;
@@ -123,8 +122,8 @@ main { height: 100vh;}
 		box-shadow: none;
 	}
 	/* project section */
-	#vedio-projects,
 	#big-projects {	padding: 0 ;}
+	#big-projects  .all-project  > .project { width: 250px;}
 	#skills .w-50 {	width: 100% !important;}
 	#other .shadow {	box-shadow: none !important	}
 	#contact .container-card .card-info {	width: 300px;}
