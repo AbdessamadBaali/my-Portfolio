@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="styles/responsive.css">
         <link rel="stylesheet" href="styles/fontawesome-free-6.0.0-beta2-web/css/all.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4857363969309688"
         crossorigin="anonymous"></script>
     </head>
@@ -408,8 +410,8 @@
             <h2 class="p-5 text-white">Contact Me!</h2>
 
             <div class="container-fuild container-from-card" > 
-                <form data-aos="fade-right" data-aos-duration="900" id='form-contact' action="index.html" method="post">
-                    
+                
+                <div  id="container-form">
                     <p  id="contact-paragraph" data-aos="fade-right" data-aos-duration="900">
                         Make sure to contact me whenever you want, 
                         I'm excited to. for freelancing opportunities, 
@@ -417,24 +419,27 @@
                         However,I am ready to your requests or questions.
                     </p>
                     
-                    <label  for="name">User name</label>
-                    <input  class="btn   rounded-pill" id="name" type="text" name="user" placeholder="Full Name" required
-                    minlength="8"  maxlength="20">
-
-                    <label  for="mail">Email</label>
-                    <input class="btn rounded-pill" id="mail" type="email" name="mail" placeholder="Email" required>
-
-                    <label  for="phone">Phone</label>
-                    <input class="btn   rounded-pill" id="phone" type="tel" name="phone" placeholder="phone" required>
-
-                    <label  for="msg">Your Message</label>
-                    <textarea  class="btn  "id="msg" name="msg" placeholder="Write Your Message Here" required > </textarea>
-                    <br>
-                    <div class="btn-group ">
-                        <input class="btn" type="submit" name="send" value="Send" >
-                        <input class="btn" type="reset" name="supp" value="Reset" >    
-                    </div>
-                </form>
+                    <form id='form-contact' action="form.php" method="post">
+                        <label  for="name">User name</label>
+                        <input  class="btn   rounded-pill" id="name" type="text" name="user" placeholder="Full Name" required
+                        minlength="8"  maxlength="20">
+    
+                        <label  for="mail">Email</label>
+                        <input class="btn rounded-pill" id="mail" type="email" name="mail" placeholder="Email" required>
+    
+                        <label  for="phone">Phone</label>
+                        <input class="btn   rounded-pill" id="phone" type="tel" name="phone" placeholder="phone" required>
+    
+                        <label  for="msg">Your Message</label>
+                        <textarea  class="btn  "id="msg" name="msg" placeholder="Write Your Message Here" required > </textarea>
+                        <br>
+                        <div class="btn-group ">
+                            <input class="btn" type="submit" name="send" value="Send" >
+                            <input class="btn" type="reset" name="supp" value="Reset" >    
+                        </div>
+                    </form>                    
+                </div>
+                
                 
                 <div class="container-card">
 

@@ -71,7 +71,7 @@ main { height: 100vh;}
 	display: flex;
 	flex-direction: column;
 }
-.container-fuild form  {width: 100%;}
+.container-fuild #container-form  {width: 100%;}
 #contact .container-card {	width: 100%;}
 #contact .container-card .card-info {
 	height: 200px;
@@ -91,7 +91,7 @@ main { height: 100vh;}
 		display: flex;
 		flex-direction: column;
 	}
-	.container-fuild form  {	width: 100%;}
+	.container-fuild #container-form  {	width: 100%;}
 	#contact .container-card {	width: 100%;}
 	#contact .container-card .card-info {
 		height: 200px;
