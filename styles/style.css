@@ -103,9 +103,8 @@ main #home .content-home {
     font-weight: 600;
 }
 .content-home h1{ 
-    color: #212529;
-    text-shadow: 1px 1px 6px;
-    -webkit-text-stroke: 0.3px #fea;
+    text-shadow: 1px 1px 6px #08fdd8;
+    -webkit-text-stroke: 0.3px #ffd700;
 }
 main #home .content-home q {  -webkit-text-stroke: 0px;}
 main #home .social-media{
