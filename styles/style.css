@@ -359,7 +359,8 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
     letter-spacing: 2px;
     display: block;
 }
-.container-fuild form > .btn-group input {
+.container-fuild form > .btn-group input,
+.container-fuild form > .btn-group a {
     border: 1px solid #1D809F !important;
     color: #1D809F !important;
 }
