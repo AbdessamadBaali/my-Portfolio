@@ -127,6 +127,5 @@ main { height: 100vh;}
 	#big-projects {	padding: 0 ;}
 	#skills .w-50 {	width: 100% !important;}
 	#other .shadow {	box-shadow: none !important	}
-
 	#contact .container-card .card-info {	width: 300px;}
 }
