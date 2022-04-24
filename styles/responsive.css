@@ -56,25 +56,23 @@ nav .menu-btn:checked ~ ul {
 	background-color: #00000080;
 }
 main { height: 100vh;}
+
 #skills {    padding: 3rem;}
+
 #about {min-height: auto;}
 #about>div .box-img-about{	width: 0%;}
 #about>div .box-img-about img{  display: none;}
 #about >div::before {  width: 0vw;}
+
 #big-projects  .all-project  > .project,
-#vedio-projects .all-vedio > .project { width: calc((100% - 60px) / 2);}
 #contact #contact-paragraph { font-size: 1.05em;}
 #contact > .container-from-card {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
-.container-fuild form  {
-	width: 100%;
-}
-#contact .container-card {
-	width: 100%;
-}
+.container-fuild form  {width: 100%;}
+#contact .container-card {	width: 100%;}
 #contact .container-card .card-info {
 	height: 200px;
 	width: 400px;
@@ -93,12 +91,8 @@ main { height: 100vh;}
 		display: flex;
 		flex-direction: column;
 	}
-	.container-fuild form  {
-		width: 100%;
-	}
-	#contact .container-card {
-		width: 100%;
-	}
+	.container-fuild form  {	width: 100%;}
+	#contact .container-card {	width: 100%;}
 	#contact .container-card .card-info {
 		height: 200px;
 		width: 400px;

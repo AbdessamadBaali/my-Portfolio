@@ -270,21 +270,38 @@ main #home .social-media a i:hover{   transform: scale(1.3);}
 }
 #work-together > h2 > a { font-weight: bolder; font-size: 40px;}
 /*----------------------the style of other cool stuff in the section of project ---------------------- */
-#other .row >* {   padding: 0!important;}
+#other .other-paragraph {
+    font-size: 1.2em;
+    line-height: 2.3rem;
+    word-wrap: break-word;
+    padding: 1rem;  
+}
+#other .container-other >* {    padding: 0!important;}
 #other  .card {  
     margin: 10px;
     width: 300px;
+    height: 350px;
+    overflow: hidden;
     transition:  ease-in-out .3s;
     border-radius: 25px;
 }
 #other  .card:hover {  
     box-shadow: 0 4px 18px #1d1d1d9f !important;
 }
-.card img{height: 180px;     
+#other .card .container-img { 
+    width: 300px;
+    height: 200px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-.card .card-body {  flex: 0 0 0;}
+#other .card .container-img  img{ 
+    width: 100%;
+    height: 100%;
+}
+.card .body-card {
+    padding: 1rem;  
+    font-size: 0.9rem;
+}
 /* --------------------service section style ----------------------*/
 #services {
     background-image: url("../images/bg/bgOffers.jpg");
