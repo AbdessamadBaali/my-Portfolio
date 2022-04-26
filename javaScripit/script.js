@@ -2,12 +2,15 @@
 $(document).ready( () => {
 
     let changeReadMore = $("#read-more-btn")
+    if (changeReadMore.text() == 'Read Less...' || changeReadMore.text() =='Read More...' ) {
+        $('#readMore').slideToggle("slow");
+        changeReadMore.text('Read More...')
+    }
+
     changeReadMore.click( () => {
         $('#readMore').slideToggle("slow");
         if (changeReadMore.text() == 'Read More...') {
             changeReadMore.text('Read Less...')
-        } else if (changeReadMore.text() == 'Read Less...') {
-            changeReadMore.text('Read More...')
         }
         else {
             changeReadMore.text('Read More...')
