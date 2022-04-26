@@ -1,14 +1,28 @@
 // read more btn script
-let changeReadMore = document.querySelector("#read-more-btn")
-function readMoreScript() {
-    if (changeReadMore.textContent === "Read More...") {
-         changeReadMore.textContent = "Read Less..."     
-    } else if (changeReadMore.textContent === "Read Less...") {
-        changeReadMore.textContent = "Read More..."
-    } else {
-        changeReadMore.textContent = "Read Less..."
-    } 
-}
+$(document).ready( () => {
+
+    let changeReadMore = $("#read-more-btn")
+    changeReadMore.click( () => {
+        $('#readMore').slideToggle("slow");
+        if (changeReadMore.text() == 'Read More...') {
+            changeReadMore.text('Read Less...')
+        } else if (changeReadMore.text() == 'Read Less...') {
+            changeReadMore.text('Read More...')
+        }
+        else {
+            changeReadMore.text('Read More...')
+        }
+    })
+
+
+
+		
+});
+
+
+
+
+
 // email generatore
 // import $ from 'jquery'
 // const sendFeedback = (emailjs, serviceID, templateId, variables, userId) => {

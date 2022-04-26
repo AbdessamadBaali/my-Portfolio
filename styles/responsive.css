@@ -82,6 +82,13 @@ main { height: 100vh;}
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
+	#about >div {
+		width: 90% !important;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 1rem;
+	}
 	#skills {    padding: 2rem;}
 	#big-projects  .all-project  > .project { width: 40%;}
 
