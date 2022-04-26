@@ -130,7 +130,7 @@ main { height: 100vh;}
 	}
 	/* project section */
 	#big-projects {	padding: 0 ;}
-	#big-projects  .all-project  > .project { width: 250px;}
+	#big-projects  .all-project  > .project { width: 320px;}
 	#skills .w-50 {	width: 100% !important;}
 	#other .shadow {	box-shadow: none !important	}
 	#contact .container-card .card-info {	width: 300px;}
