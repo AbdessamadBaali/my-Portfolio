@@ -85,12 +85,14 @@ main { height: 100vh;}
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
 	main {height: 95vh;}
+	/* about section */
+	#about {
+		padding: 0;}
 	#about >div {
-		width: 90% !important;
+		width: 100% !important;
 		border: none;
 		border-radius: 0;
 		box-shadow: none;
-		padding: 1rem;
 	}
 	#skills {    padding: 2rem;}
 	#big-projects  .all-project  > .project { width: 40%;}
@@ -122,14 +124,15 @@ main { height: 100vh;}
 		font-size: 14px !important;
 		margin: 0;
 	}
-	/* about section */
-	#about {
-		padding: 0;}
-	#about >div {
-		width: 100% !important;
-		border: none;
-		border-radius: 0;
-		box-shadow: none;
+	main #home .social-media{
+		bottom: 15%;
+	}
+
+	#skills h3{
+		padding: 1rem 0 !important;
+	}
+	#skills .desc {
+		padding: 0 0rem ;
 	}
 	/* project section */
 	#big-projects {	padding: 0 ;}
