@@ -9,8 +9,8 @@ header nav{
 	left: 0%;
 	width: 55%;
 }
-header nav ul {display: none !important;}
-header nav ul li{	border-bottom: 1px solid #eee;}
+header nav ul {display: none !important; } 
+header nav ul li{	border-bottom: 0.5px solid #eee;}
 header nav ul .nav-link{ padding: 1rem !important;}
 nav .menu-icon{
 	display: block;
@@ -54,6 +54,9 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
 nav .menu-btn:checked ~ ul {
 	display: block !important;
 	background-color: #00000080;
+}
+header nav ul li a:hover{
+    border-left: 2px solid var(--linkColor) !important;
 }
 main { height: 100vh;}
 
@@ -120,12 +123,12 @@ main { height: 100vh;}
 		margin: 0;
 	}
 	/* about section */
-	#about {padding: 0;}
+	#about {
+		padding: 0;}
 	#about >div {
 		width: 100% !important;
 		border: none;
 		border-radius: 0;
-		border-bottom: 1px solid #000;
 		box-shadow: none;
 	}
 	/* project section */
