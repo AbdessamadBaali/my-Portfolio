@@ -1,5 +1,5 @@
-# hi there i am abdessamad baali
+# Hi 👋 There i am Abdessamad Baali
 
-## this is my portfolio 
+## This is my portfolio 
 here u can find a lot of inforamtion about me go check
 <a href='https://baalidev.netlify.app'>baalidev</a>
