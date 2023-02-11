@@ -1,6 +1,6 @@
 // read more btn script
-$(document).ready( () => {
 
+$(document).ready( () => {
     let changeReadMore = $("#read-more-btn")
     if (changeReadMore.text() == 'Read Less...' || changeReadMore.text() =='Read More...' ) {
         $('#readMore').slideToggle("slow");
