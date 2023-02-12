@@ -60,6 +60,13 @@ header nav ul li a:hover{
 }
 main { height: 100vh;}
 
+main #home .content-home {
+	flex-direction: column;
+}
+main #home .content-home  .container-img-home {
+    width: 50%;
+}
+
 #skills {    padding: 3rem;}
 
 #about {min-height: auto;}
@@ -84,6 +91,13 @@ main { height: 100vh;}
 }
 /* ====================RESPONSIVE 720PX =========================== */
 @media(max-width : 768px){
+	.container-content-home {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	main {height: 95vh;}
 	/* about section */
 	#about {
@@ -112,6 +126,9 @@ main { height: 100vh;}
 
 }
 @media(max-width : 576px){ 
+	main #home .content-home  .container-img-home {
+		width: 70%;
+	}
 	main {height: 90vh;}
 	/* home section */
 	.content-home h2,.content-home q{
