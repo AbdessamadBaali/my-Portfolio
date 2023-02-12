@@ -125,7 +125,19 @@ main #home .content-home  .container-img-home {
 	}
 
 }
-@media(max-width : 576px){ 
+@media(max-width : 576px){
+	#doc-main p {
+		width: 100%;
+	}
+	#doc-main > div{
+		padding: 30px 10px !important;
+	}
+	#sliderMore {
+		width: 100%;
+		border: 1px solid gray;
+		box-shadow: 1px 1px 5px black;
+		margin: auto;
+	}
 	main #home .content-home  .container-img-home {
 		width: 70%;
 	}
