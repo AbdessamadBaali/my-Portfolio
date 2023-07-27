@@ -47,7 +47,7 @@ header {
     top: -25px;
     left: 50px;
     color: var(--textColor);
-    font-size: 2em;
+    font-size: 1.8em;
     transition: ease-in-out .5s;
     cursor: pointer;
     letter-spacing: 2px;
