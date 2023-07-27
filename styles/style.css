@@ -96,10 +96,10 @@ main #home .content-home {
     min-height: 50vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 10%;
+    text-align: center;
+    padding-top: 150px;
 }
 .content-home h1,.content-home h2,.content-home q{
     letter-spacing: 1.4px;
